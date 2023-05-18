@@ -83,14 +83,17 @@
 	  poco efficienti
 	  #+END_NOTE
 	- ### **VETTORE ORDINATO**
+	  collapsed:: true
 		- #+BEGIN_TIP
 		  conviene quando ci sono molte letture e poche scritture
 		  #+END_TIP
 		- **RAPPRESENTAZIONE**
+		  collapsed:: true
 			- si usa un vettore con un **cursore** (solo una semplice variabile) all'ultima posizione occupata
 			- si stabilisce una **relazione di ordinamento totale** <= sulle **chiavi**
 			- le chiavi sono memorizzate su un vettore in posizioni contigue e in ordine crescente partendo dalla prima posizione
 		- **VERIFICA DELL'APPARTENENZA**
+		  collapsed:: true
 			- **ricerca binaria (dicotomica)**
 				- Definizione dei tipi:
 					- Dizionario: tipo strutturato con:
@@ -102,6 +105,7 @@
 				  complessità del caso pessimo: logaritmica --> log_{2}(n)
 				  #+END_NOTE
 		- **COMPLESSITA' COMPUTAZIONALE DELLE OPERAZIONI**
+		  collapsed:: true
 			- **inserisci**: *log_{2}(n) + O(n) = O(n)* comporta uno spostamento in avanti di ogni elemento
 				- nota: la complessità logaritmica è data dalla ricerca (binaria), questo perchè prima di inserire si deve cercare il posto dove mettere il valore
 			- **appartiene**: *log_{2}(n)* se ricerca binaria
