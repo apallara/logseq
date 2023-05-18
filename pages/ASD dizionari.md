@@ -29,6 +29,7 @@
 		- *recupera* --> recupero informazioni nell'attributo
 		- *aggiorna* --> modifiche nell'attributo
 - **SPECIFICHE SINTATTICHE**
+  collapsed:: true
 	- Tipi
 		- dizionario, boolean, chiave, valore (anche altre strutture)
 	- Operatori

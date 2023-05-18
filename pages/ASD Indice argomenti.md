@@ -8,6 +8,7 @@
 	- [[ASD tipo astratto grafo]] --> [[ASD Riassunto grafi]]
 	- [[ASD albero]] --> [[ASD Riassunto alberi]]
 	- [[ASD albero binario]] --> [[ASD Riassunto alberi binari]]
+	- [[ASD dizionari]]
 	- [[ASD albero binario di ricerca ABR]] --> [[ASD Riassunto alberi binari di ricerca ABR]]
 	- [[ASD tipo astratto coda con priorità]]
 - ## Tecniche algoritmiche
