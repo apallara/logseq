@@ -41,6 +41,7 @@
 		- cancella   (chiave, dizionario) -> dizionario
 		- recupera   (chiave, dizionario) -> valore
 - **SPECIFICHE SEMANTICHE**
+  collapsed:: true
 	- #+BEGIN_NOTE
 	  le {} indicano insiemi
 	  #+END_NOTE
@@ -82,7 +83,6 @@
 	  poco efficienti
 	  #+END_NOTE
 	- ### **VETTORE ORDINATO**
-	  collapsed:: true
 		- #+BEGIN_TIP
 		  conviene quando ci sono molte letture e poche scritture
 		  #+END_TIP
@@ -197,7 +197,6 @@
 			- tende a distribuire **probabilisticamente** in maniera più uniforme
 			- può rappresentare qualsiasi cosa usando interi
 - **METODI DI SCANSIONE**
-  collapsed:: true
 	- si usano quando si incontra una locazione occupata e bisogna trovarne un'altra libera
 	- funzione *f_{1}* usata per l'*i-esima* volta che si trova una posizione del vettore *v* occupata;
 		- > *i>=0, (per i=0, f_{0}=h)*
