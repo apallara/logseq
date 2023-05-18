@@ -1,6 +1,0 @@
-- array = vettore
-- PRO:
-	- facile da realizzare
-- COTRO:
-	- rigido
-		- una volta dichiarato, il numero di elementi non può variare
