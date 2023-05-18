@@ -10,12 +10,10 @@
   E' consigliabile la lista **quando sono necessari duplicati**, ma attenzione perchè è necessaria la relazione d'ordine
   #+END_TIP
 - ## Notazione
-  collapsed:: true
 	- l = <a_{1}, a_{2}, ..., a_{n}>    n>=0
 	- a ciascun elemento si associa una posizione *pos(i)*
 	- e un valore *a(i)*
 - ## Accesso
-  collapsed:: true
 	- accesso diretto solo al primo elemento della sequenza
 	- accesso per scansione sequenziale per tutti gli elementi intermedi
 - ## Lunghezza
