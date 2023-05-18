@@ -1,0 +1,59 @@
+- #+BEGIN_NOTE
+  In senso matematico
+  #+END_NOTE
+- un grafo **G** è definito da una *coppia* <N,A> dove:
+	- N: insieme dei nodi
+	- A: insieme degli archi, A⊆NxN
+		- #+BEGIN_NOTE
+		  l'insieme *A* contiene SOLO gli archi tra i nodi collegati
+		  #+END_NOTE
+- gli archi possono essere:
+	- orientati, generando un  ((63ac858a-1cca-4895-bd76-12b8d7b68cc9))
+	- non orientati, generando un ((63ac85bf-0400-4b2a-ae81-47f321f291be))
+- NOTA: due nodi sono **adiacenti** se sono collegati da un arco
+- ## Grafo orientato
+  id:: 63ac858a-1cca-4895-bd76-12b8d7b68cc9
+	- ![image.png](../assets/image_1672417537683_0.png)
+	- se un arco è definito da un nodo *u_{i}* ad un nodo *u_{j}* ed entrambi i nodi ⊆N allora il grafo.
+	- l'arco si rappresenta con una freccia da *u_{i}* ad *u_{j}*
+	- #+BEGIN_TIP
+	  usato per rappresentare:
+	       *    relazioni "follow" di Instagram, il seguire reciprocamente non è sempre garantito
+	       *    relazioni di parentela (es.  X è moglie di Y, B è padre di Y)
+	  #+END_TIP
+	- ### Definizioni e tipi di cammini
+		- **cammino**: sequenza di nodi u_{0}, u_{1}, ..., u_{k}, tali che (u_{i},u_{i+1}) ∈ A, per i=0,1,2,...,k-1
+		  collapsed:: true
+			- il cammino parte dal nodo u_{0}, attraversa i nodi da u_{1} a u_{k-1}
+			- arriva al nodo u_{k}, ed ah una **lunghezza** uguale a k
+			- **il cammino ha diversi tipi:**
+				- **semplice**: se non ci sono nodi ripetuti (u_{i} ≠ u_{j} per 0 <= i <= j <= k)
+				- **chiuso**: se u_{0} = u_{k}
+				- **ciclo**: è fatto da un cammino semplice e chiuso
+				- **completo**: generalmente inutile perchè se tutti i nodi sono connessi con tutti allora basta solo rappresentare questo concetto e non tutti i cammini.
+				  Formalmente: se per ogni coppia di nodi u_{i}, u_{j} ∈ N esiste un arco che va da un u_{i} ad u_{j} (A=NxN)
+		- **Tipi di grafo**:
+			- **connesso**: è un grafo G=<N,A> se dati *u∈N* e *v∈N* esiste un cammino da *u* a *v* o un cammino da *v* ad *u*
+			  id:: 63b85bac-1c21-4640-9647-0d69d92abe13
+			- **fortemente connesso**: un grafo G se per ogni coppia di nodi *u* e *v* esiste **almeno** un cammino da *u* a *v* **ed** almeno un cammino da *v* ad *u*
+			  id:: 63b85bac-81b0-4c64-8826-38987f95b541
+				- ![image.png](../assets/image_1672420378632_0.png)
+				-
+- ## Grafo non orientato
+  id:: 63ac85bf-0400-4b2a-ae81-47f321f291be
+	- ![image.png](../assets/image_1672417523989_0.png)
+	- #+BEGIN_TIP
+	  si usano per rappresentare relazioni simmetriche
+	  #+END_TIP
+	- se le coppie <*u_{i}*,*u_{j}*> sono congiunte in entrambe le direzioni
+	- l'arco si rappresenta con una connessione senza freccia tra *u_{i}* e *u_{j}*
+	- #+BEGIN_TIP
+	  usato per rappresentare relazione di amicizia in FaceBook
+	  #+END_TIP
+	- ### Definizioni e tipi
+		- gli archi sono formati da coppie non ordinate, mentre in un grafo orientato (u_{i},u_{j}) e (u_{j},u_{i}) indicano due archi distinti, in un grafo non orientato indicano lo stesso arco che incide sui due nodi
+		- i nodi congiunti da un arco sono adiacenti
+		- nei grafi non orientati troviamo nozioni analoghe a quelle del grafo orientato:
+			- cammino = catena
+			- ciclo = circuito
+	-

@@ -1,0 +1,45 @@
+- cose che non sai:
+	- monoide,
+	- monoide libero generato da un insieme,
+	- autovettore,
+	- autovalore
+- ## Argomenti
+	- grammatiche generative
+	- linguaggi liberi da contesto
+	- linguaggi dipendenti da contesto
+	- grammatiche e macchine
+		- classificazione grammatiche secondo Chomsky
+		- teorema della gerarchia di Chomsky
+		- lemma della stringa vuota
+		- operazioni su linguaggi
+		- proprietà di chiusura delle classi di linguaggi rispetto alle operazioni
+	- automi
+		- a stati finiti deterministici
+		- a stati finiti non deterministici
+	- modello del compilatore
+		- analizzatore
+			- lessicale
+			- sintattico
+			- semantico
+		- generazione e ottimizzazione del codice
+		- tabella dei simboli
+- ## Testi di riferimento
+  collapsed:: true
+	- elementi di teoria dei linguaggi formali (semeraro)
+	- linguaggi di programmazione, principi e paradigmi (2 ediz. gabrielli, martini)
+- ## Esame
+  collapsed:: true
+	- solo scritto
+		- domande teoriche
+		- applicazioni di teoremi
+		- esercizi
+		- richiesta dei teoremi
+		- circa 2 dimostrazioni che potrebbero essere richieste
+- ## Prova in itinere (appello)
+  collapsed:: true
+	- prova scritta
+	- prima dell'interruzione
+	- previsti:
+		- esecuzione esecizi su teoria linguaggi formali
+		- enunciazione definizioni
+		- dimostrazione teoremi della teoria dei linguaggi formali

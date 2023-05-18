@@ -1,0 +1,211 @@
+- #[[ASD grafo]]
+- ## Specifica sintattica
+	- **Tipi**:
+		- grafo, boolean, nodo, lista, tipoelem
+	- **Operatori**:
+		- crea:      () --> grafo
+		- vuoto: () --> boolean
+		- insnodo: (nodo, grafo) --> grafo
+		- insarco: (nodo, nodo, grafo) --> grafo
+		- cancnodo: (nodo, grafo) --> grafo
+		- cancarco: (nodo, nodo, grafo) --> grafo
+		- adiacenti: (nodo, grafo) --> lista
+		- esistenodo: (nodo, grafo) --> boolean
+		- eistearco: (nodo, nodo, grafo) --> boolean
+		- legginodo: (nodo, grafo) --> tipoelem
+		  background-color:: yellow
+		- scrivinodo: (tipoelem, nodo, grafo) --> grafo
+		  background-color:: yellow
+- ## Specifica semantica
+	- **Tipi**:
+		- grafo: insieme G = (N,A) con N sottoinsieme finito di elementi di tipo *odo* e A⊆NxN
+		- nodo: insieme finito qualsiasi
+		- lista: lista di elementi di tipo nodo
+		- boolean: insieme dei valori di verità
+	- **Operatori**:
+		- crea = G
+		  collapsed:: true
+			- POST: G=(N,A) con N=∅ e A=∅
+		- vuoto(G)=b
+		  collapsed:: true
+			- POST: b=vero se N=∅ e A=∅; b=falso altrimenti
+		- insnodo(u,G)=G'
+		  collapsed:: true
+			- PRE: G=(N,A)  *u*∉N
+			- POST: G'=(N',A), N'=N∪{u}
+		- insarco(u,v,g)=G'
+		  collapsed:: true
+			- PRE: G=(N,A), u∈N, v∈N, (u,v)∉A
+			- POST: G'=(N',A'), A'=A∪{(u,v)}
+		- cancnodo(u,G)=G'
+		  collapsed:: true
+			- PRE: G=(N,A), u∈N e non esiste v∈N t.c. (u,v)∈A oppure (v,u)∈A
+			- POST: G'=(N',A), N'=N\{u}
+		- cancarco(u,v,G)=G'
+		  collapsed:: true
+			- PRE: G=(N,A), u∈N, v∈N, (u,v)∈A
+			- POST: G'=(N,A'), A'=A\{(u,v}
+		- adiacenti(u,G)=L
+		  collapsed:: true
+			- PRE: G=(N,A), u∈N
+			- POST: L è una lista che contiene **una e una sola volta** gli elementi di A(u)={v∈N|(u,v)∈A}
+				- #+BEGIN_WARNING
+				  è necessario definire la lista in maniera intensionale, inoltre deve contenere una ed una sola volta gli elementi perchè la struttura grafo è di tipo insieme (senso matematico), mentre la lista ammette duplicati
+				  #+END_WARNING
+- ## Ulteriori specifiche (per grafi etichettati)
+	- legginodo, vedi { ((26d211ea-707a-41fd-8517-208f1c0b4a10)) }
+	- scrivinodo, vedi { ((f5c16e6f-b382-4dd8-8cd0-a773b4ed3f9d)) }
+	- con l'aggiunta degli operatori:
+		- leggiarco
+		- scriviarco
+	- questi sono utili quando è necessario aggiungere ai nodi e/o archi informazioni (etichette, pesi)
+	- #+BEGIN_TIP
+	  indicata per rappresentare strade di navigatori, ad esempio tempo di percorrenza, traffico, etc...
+	  #+END_TIP
+- ## Rappresentazione con matrice di adiacenza
+  id:: 6453caa0-ee4b-4ec9-9646-2f9a620d3bbd
+  collapsed:: true
+	- la più semplice rappresentazione prevede l'uso di una matrice NxN, E=[e_{ij}], t.c. e_{ij}=1 nel caso (i,j)∈A, mente e_{ij}=0 se (i,j)∉A
+		- NOTA: E è l'insieme dei possibili pesi, se *e_{ij}*=0 l'arco da nodo a nodo non esiste, mentre se *e_{ij}*=1 allora l'arco esiste
+	- ![image.png](../assets/image_1673982630143_0.png)
+	- se il grafo è pesato, nella matrice si utilizzano i pesi degli archi al posto degli elementi binari. Se p_{ij} è il peso dell'arco (i,j) allora l'elemento della matrice E diventa p_{ij} se (i,j)∈A, e +∞ (-∞) se (i,j)∉A
+	- CONTRO:
+		- in caso di migliaia di nodi e pochi archi rappresentati allora si ha spreco di spazio
+		- in caso di cancellazione e aggiunta di nodi è necessaria riallocazione
+		- l'occupazione di spazio è **quadratico** rispetto al numero di nodi
+	- **Complessità**:
+		- **inserimento** e **cancellazione**: O(n^{2}) per lo spostamento di righe e colonne
+- ## Rappresentazione con matrice di adiacenza estesa
+  id:: 63c6f4d8-517a-4f9b-8ced-159606bcff9f
+  collapsed:: true
+	- Si usa la matrice di adiacenza di prima ma si aggiungono degli elementi:
+		- LABEL
+		- MARK: è un flag che ha valore falso o 0 se il nodo è stato rimosso
+			- consente di "cancellare logicamente" un nodo ma non fisicamente
+			- #+BEGIN_NOTE
+			  Seguendo la specifica semantica è possibile cancellare un nodo solo dopo aver rimosso i suoi archi
+			  #+END_NOTE
+		- ARCHI: contiene la somma degli archi entranti e uscenti dal generico nodo
+	- ![image.png](../assets/image_1673983364250_0.png)
+	- #+BEGIN_TIP
+	  Utile per analitiche (es. grafi fully connected) ma non per usi dinamici
+	  #+END_TIP
+	- **Complessità**:
+		- **inserimento** e **cancellazione**: O(n), non si sposta nulla perchè si usano gli indici di MARK
+- ## Rappresentazione con matrice di incidenza
+  id:: 6453caa0-bad7-4bc6-a6bd-6672e26eb9b4
+  collapsed:: true
+	- un grafo G=(N,A) si può rappresentare mediante una matrice B(NxM)
+		- B=[b_{ik}], nella quale ciascuna riga rappresenta un nodo e ciascuna colonna rappresenta un arco
+	- per un **grafo non orientato** b_{ik} di B diviene
+	  background-color:: yellow
+		- 1 per l'esistenza di un arco
+		- 0 altrimenti
+		- ![image.png](../assets/image_1673994552592_0.png)
+		- CONTRO: ogni volta che si aggiunge o cancella si devono aggiornare gli indici
+		- #+BEGIN_TIP
+		  usabile quando la matrice è **particolarmente sparsa**: ossia quando ci sono molti nodi e pochi archi
+		  
+		  rispetto alla matrice di adiacenza si rappresentano solo gli effettivi archi
+		  #+END_TIP
+	- per un grafo **orientato**
+	  background-color:: yellow
+		- +1 se l'arco k-esimo entra nel nodo i
+		- -1 se l'arco k-esimo esce dal nodo i
+		- 0 altrimenti
+		- ![image.png](../assets/image_1673994792443_0.png)
+		- CONTRO:
+			- si spreca la cella per rappresentare il segno dell'indice e non per rappresentare il suo valore
+	- CONTRO per grafi ORIENTATI e NON ORIENTATI
+		- dato un nodo è difficile ricavare l'insieme di adiacenza
+			- per calcolare A(u) si deve scandire la riga di *u* alla ricerca delle colonne *k* t.c. *b_{uk}*=-1, e per ogni colonna *k* scandire l'indice di riga *i* t.c. *b_{ik}*=+1
+				- nodi *i* in A(u) saranno quelli per cui *b_{ik}*=+1
+			- costo O(n)
+- ## Rappresentazione con vettore di adiacenza: grafo orientato
+  id:: 6453caa0-6010-4a8c-a3c4-79f98f538137
+  collapsed:: true
+	- è possibile rappresentare il grafo (N,A) con due #[[ASD array]] :
+		- il vettore NODI
+			- formato da N elementi
+			- NODI(i) contiene un cursore alla posizione di ARCHI a partire dalla quale è memorizzato A(i)
+		- il vettore ARCHI
+	- ![image.png](../assets/image_1674051957019_0.png){:height 198, :width 517}
+		- Il primo vettore memorizza il nodo all'interno delle sue posizioni
+		- il secondo è quello che rappresenta all'interno delle sue posizioni l'arco
+		- dal vettore NODO parte un CURSORE alla posizione nel vettore ARCO, dalla posizione puntata fino al successivo cursore si rappresentano gli archi dal nodo di partenza a quello di arrivo
+	- PRO:
+		- facile trovare i nodi adiacenti partendo da un nodo
+	- CONTRO:
+		- tutti quelli dei vettori
+		- aggiungere o rimuovere un arco significherebbe fare shift ed aggiornare tutti i cursori successivi o precedenti a quello appena inserito
+- ## Rappresentazione con vettore di adiacenza: grafo non orientato
+  id:: 6453caa0-aecb-40c2-a931-4fae79b9334d
+  collapsed:: true
+	- identico al precedente ma con il problema di rappresentare 2 volte ogni arco
+	- ![image.png](../assets/image_1674053126209_0.png)
+	- PRO: quelli del precedente
+	- CONTRO: tutti quelli del precedente
+- ## Rappresentazione con lista di adiacenza
+  id:: 6453caa0-e122-4e79-9f4c-b2c214e4b8b0
+  collapsed:: true
+	- si usa una lista per rappresentare ogni nodo e i suoi adiacenti
+		- la soluzione si compone di un vettore che rappresenta tutti i nodi
+		- ogni nodo punta ad una lista di nodi adiacenti
+	- ![image.png](../assets/image_1674053469383_0.png)
+	- estensione più dinamica delle precedenti
+	- **PRO**:
+		- più facile aggiungere archi
+	- **CONTRO**:
+		- difficile cancellare un nodo
+		- gli stessi contro dei vettori
+		- senza l'indice "MARK" che indica logicamente la cancellazione si devono eseguire gli shift, se invece fosse presente non sarebbe necessario fare lo shift
+- ## Rappresentazione con struttura a puntatori
+  id:: 6453caa0-7053-46be-ab3e-db00f72ac1ae
+  collapsed:: true
+	- è la versione dinamica della ((63c6f4d8-517a-4f9b-8ced-159606bcff9f))
+	- il nodo è rappresentato con un record *v* che contiene:
+		- *e* = etichetta,
+		- *h* = archi entranti
+		- *k* = archi uscenti
+	- ![image.png](../assets/image_1674055103583_0.png)
+- ## Visita di un grafo
+  collapsed:: true
+	- esistono dei metodi sistematici per esplorare un grafo "visitando" **almeno una volta ogni nodo ed ogni arco** di un grafo G non orientato e connesso oppure, orientato e fortemente connesso
+		- RICORDA:
+			- ((63b85bac-1c21-4640-9647-0d69d92abe13))
+			- ((63b85bac-81b0-4c64-8826-38987f95b541))
+	- **Algoritmo generale di visita**
+		- esaminato un nodo iniziale *i*, si visita un nodo *j* collegato ad *i*
+			- POI si considera un nuovo nodo *k* (diverso da *i* e da *j*) ma adiacente ad *i* oppure a *j*
+			- Si usano insiemi:
+				- *R*: dei nodi visitati
+				- *Q*: dei nodi utili per il proseguimento della ricerca
+				- *B*: in cui vengono memorizzati gli archi utilizzati per la scoperta dei nuovi nodi
+			- ![image.png](../assets/image_1674059587032_0.png)
+	- **Depth first search (DFS)**
+		- considerabile come diretta estensione dell'algoritmo di ((63c14954-9f25-40a6-9026-4ecfb5ceefb6))
+		- si contrassegna un vertice (ossia un nodo) appena viene visitato, si chiede quale è un adiacente e si verifica se non è contrassegnato, quindi dopo ci si sposta verso uno non contrassegnato
+		- ![image.png](../assets/image_1674057383459_0.png){:height 190, :width 343}
+		- ![image.png](../assets/image_1674057394761_0.png){:height 271, :width 393}
+	- **Breadth first search (BFS)**:
+		- ogni vertice (ossia un nodo) adiacente al nodo corrente è visitato prima di spostarsi dal vertice corrente stesso
+		- i nodi si visitano in ordine di **distanza crescente** dal nodo di partenza *u*, dove la distanza da *u* ad un generico nodo *v* è il minimo numero di archi in un cammino da *u* a *v*
+			- NOTA: per "distanza crescente" si intende il numero di archi tra un nodo ed un altro, in questo caso si visitano prima i nodi a distanza più corta
+		- #+BEGIN_TIP
+		  è consigliabile tenere traccia in una **coda** i vertici visitati ma non completamente "esaminati" così da poter spostarsi dal vertice corrente all'adiacente; inoltre è possibile tornare al vecchio vertice dopo il movimento
+		  #+END_TIP
+		- ![image.png](../assets/image_1674058261773_0.png)
+	- **DFS vs BFS**
+		- la BFS grazie all'ordine di visita per distanza crescente fornisce sempre un cammino "ottimo"
+		- entrambi sono metodi di visita sistematica che vengono usati per risolvere problemi come:
+			- verificare se un grafo orientato è connesso o no
+			- trovare tutti i sottografi connessi di un grafo non orientato (componenti connesse)
+		- entrambi generano un albero radicato che ha come radice il vertice iniziale di visita
+			- esempio: tutti i problemi che chiedono di selezionare tra tutti i percorsi che connettono due nodi di un grafo quello che risulta ottimo in base a criteri di minimizzazione della somma dei pesi associati agli archi
+- ## Problema della ricerca del percorso più breve
+  collapsed:: true
+	- è il problema di cercare il percorso più breve che unisce due nodi di un grafo
+	- sia G=(N,A) un grafo orientato etichettato negli archi con valori interi positivi (pesi)
+		- partendo dal nodo r∈N, per ogni nodo u∈N, si calcola il percorso (cammino o catena) che connette *r* ad *u*, tale che la somma dei pesi associati agli archi che compongono il cammino sia minima
+			- esempio: in un navigatore trovare il percorso più corto in termini di distanza tra partenza e destinazione, alle strade si associa un peso pari alla lunghezza di esse
+		- ![image.png](../assets/image_1674060517623_0.png)

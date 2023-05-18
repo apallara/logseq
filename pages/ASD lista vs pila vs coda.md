@@ -1,0 +1,4 @@
+- queste strutture differiscono sostanzialmente perchè:
+- nella **LISTA**: definizione solo della forma, sequenza anche vuota di elementi di tipo omogeneo, si accede con posizione
+- nella **PILA**: idem lista + accesso LIFO
+- nella **CODA**: idem a lista + FIFO

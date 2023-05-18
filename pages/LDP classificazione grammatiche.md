@@ -1,0 +1,6 @@
+- ## Gerarchia di Chomsky
+	- ![image.png](../assets/image_1681809930759_0.png)
+	- **Tipo 0**:
+	- Tipo 1
+	- tipo 2
+	- Tipo 3 Lineari destre: le regole producono simboli solo a DX

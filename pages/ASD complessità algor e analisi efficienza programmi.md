@@ -1,0 +1,197 @@
+- ## Teoria della complessità
+	- studia **oggettivamente** (indipendentemente dalla macchina) l'uso di risorse necessarie alla computazione di algoritmi
+	- Obiettivi:
+		- stabilire quali problemi ammettono una soluzione algoritmica (**STUDIO DI COMPUTABLITIA'**)
+		- per i problemi computabili è necessario sapere la complessità degli algoritmi che li risolvono
+		- confrontare diversi algoritmi che risolvono lo stesso problema
+	- **Complessità di un algoritmo**: è la misura delle risorse di calcolo consumate durante una computazione
+	- **Efficienza di un algoritmo**: è inversamente proporzionale alla sua complessità
+	- Le **risorse** interessate sono:
+		- **tempo**
+			- complessità in tempo
+		- e **spazio di memoria**
+			- complessità di spazio
+- ## Complessità computazionale
+	- l'efficienza di un algoritmo è legata alla complessità dell'algoritmo
+	- #+BEGIN_NOTE
+	  generalmente si valuta la bontà di un algoritmo in base al suo comportamento in base alla **crescita della dimensione del problema**
+	  #+END_NOTE
+- ## Dimensione dell'input
+	- il costo di esecuzione di un programma dipende anche dai particolari dati di ingresso
+		- #+BEGIN_NOTE
+		  il costo di esecuzione di un programma di ordinamento di un insieme di numeri dipende dalle dimensioni dell'insieme che si considera
+		  #+END_NOTE
+		- per tenere conto del numero di dati con cui si esegue il programma si assume che l**a dimensione dell'input rappresenti l'argomento della funzione che esprime il costo** di esecuzione di un programma
+			- impiegando un elaboratore ed un suo linguaggio di programmazione, la dimensione *n* è lo spazio occupato nella memoria dell'elaboratore dai dati relativi al programma
+			- la dimensione *n* è rappresentato nella Macchina di Touring come lunghezza della porzione di nastro che contiene i dati di ingresso
+				- #+BEGIN_NOTE
+				  si usa la macchina di Touring perché se si dovesse scrivere una matrice, si riesce a visualizzare la quantità di memoria è rappresentata in maniera lineare
+				  #+END_NOTE
+## Complessità in spazio
+	- è il massimo spazio occupato durante l'esecuzione di un algoritmo, il quale può costruire insiemi di dati intermedi o di servizio, oltre ad operare sui dati iniziali e finali
+		- essendo disponibili sul mercato grandi quantità di memoria a basso costo si studia principalmente la complessità in tempo
+		- questo però non consente di assumere di avere memoria infinita
+## Complessità in tempo
+	- fissata la dimensione *n*, è tempo che un algoritmo impiega a risolvere il problema
+	- si esprime in funzione di *n* (tempo in funzione della dimensione)
+## Complessità asintotica
+	- deriva da un *n* generico
+		- **per valori piccoli di n**: due algoritmi possono avere efficienze simili quindi è poco sensato confrontarli
+		- **per valori grandi di n**: si prenderà sempre quello con il termine di grado massimo (nella funzione che esprime il suo costo), più basso a richiedere minor tempo di esecuzione
+		- #+BEGIN_TIP
+		  Si considera sempre l'algoritmo con valori di *n* più grandi
+		  #+END_TIP
+- ## Modello di costo
+	- Si valutano solo alcune operazioni che sono quelle preminenti o operazioni chiave (esempio i cicli), si trascurano le operazioni marginali
+	- si ignorano le costanti moltiplicative
+		- si studiano le funzioni i complessità nel loro ordine di grandezza
+	- **costo** = 1 (tutte le operazioni semplici)
+		- assegnazione
+		- operazione aritmetica (+, -, *, /)
+		- logica (AND, OR, NOT)
+		- confronto <, <=, >, >=, =, diverso
+		- lettura/scrittura
+	- **costo** istruzioni **FOR**
+		- *for i=1 to n do S1* è equivalente al costo del seguente ciclo
+		- > i = 1               *(c=1)*
+		      while i<=n do
+		  {
+		      S1;
+		          i = i+1;          *(c=2)*
+		  }
+		- ed è quindi dato da 2+(costo di S1 + 3)*n
+			- esempio:
+				- > fatt=1
+				  for i = 1 to n do fatt = fatt * i;
+		- per n = 3,     costo = 1+2+(1+1+3)*3=18
+	- **costo** istruzioni **IF**
+		- if **cond** then **S1** else **S2** è dato da:
+			- costo test cond + costo S1     se cond
+			  costo test cond + costo S2     se *not* cond
+	- **costo** istruzione di **ciclo**
+		- while **cond** do **S1** è dato da:
+			- costo test cond + (costo test cond + costo S1)*n   [se il ciclo è ripetuto n volte]
+	- **costo** istruzione di **ripetizione**
+		- repeat **S1** until **cond** è dato da:
+			- (costo test cond + costo S1)*n     [se il ciclo è ripetuto n volte]
+	- #+BEGIN_NOTE
+	  Il costo di exe di una istruzione composta è la somma dei costi delle operazioni che la compongono
+	  #+END_NOTE
+- ## Caso pessimo, medio e ottimo
+	- la complessità di un algoritmo NON può essere sempre caratterizzata da una sola funzione di complessità
+	- a parità di dimensione di dati, il tempo di exe può dipendere dalla specifica **configurazione dei dati**
+	- si considerano di solito 3 differenti tipi di complessità:
+		- **caso pessimo**:
+			- ottenuto considerando la configurazione che a parità di dimensione dei dati, da luogo al **tempo massimo di calcolo**, la funzione è:
+			- > f_{pess}(n)
+		- **caso medio**:
+			- si riferisce al **tempo** di calcolo **mediato** su tutte le possibili configurazioni di dati, sempre per una dimensione *n*. Funzione di complessità è indicata con:
+			- > f_{med}(n)
+		- **caso ottimo**:
+			- si ottiene considerando la configurazione che da luogo al **minor tempo di calcolo**. La funzione è:
+			- > f_{ott}(n)
+- ## Ricerca lineare
+	- *ricerca_lineare*:
+		- t: array per riferimento;
+		  k: tipochiave;
+		  trovato: boolean per riferimento
+	- la procedura ricerca l'elemento avente chiave *k*. Se la ricerca ha successo allora la variabile booleana **trovato** viene posta a *true*, altrimenti *false*
+	- ![image.png](../assets/image_1670427175881_0.png)
+	- il costo di esecuzione di un programma dipende dalla posizione dell'elemento cercato:
+		- se l'elemento cercato è il primo, allora si effettua un solo confronto (caso **ottimo**);
+		- se l'elemento cercato è il secondo allora si effettuano due confronti e così via.
+		- il caso **pessimo** è costituito dalla ricerca dell'ultimo elemento o da una ricerca infruttuosa, perché l'algoritmo esamina tutte le componenti dell'array ed esegue il ciclo *n* volte
+		- **VALUTAZIONE DEL CASO PESSIMO**: costo del programma nel caso di ricerca dell'ultimo elemento o di ricerca infruttuosa:
+			- l'istr 1 è eseguita 1 volta
+			- l'istr 3 è eseguita *n* volte
+			- il test dell'istr *repeat* è eseguita *n* volte
+			- il test dell'istr *if than else* è eseguito 1 volta
+			- l'istr 6 è eseguita 1 volta
+			- l'istr 7 non è eseguita
+			- il costo è: **1 + n + n + 1 + 1 = 3+2n --> 2n**
+				- #+BEGIN_NOTE
+				  in realtà il costo è approssimato a **2n** questo perchè la variazione di sole 3 istruzioni è poco rilevante
+				  #+END_NOTE
+		- **VALUTAZIONE DEL CASO MEDIO**:
+			- valutazione del comportamento del programma nel caso medio è necessario distinguere il caso di ricerca con successo da quello di ricerca infruttuosa. Nel caso di ricerca fruttuosa, se si assume che tutti gli elementi dell'array possano essere ricercati mediante (n+1)/2 confronti. Infatti se si ricerca l'i-esimo elemento si effettuano i confronti e quindi il numero di confronti medio è dato da:
+			  ![image.png](../assets/image_1670430095415_0.png)
+			- dove Prob(E(i)) è la probabilità che l'elemento da cercare nell'array sia quello in posizione i.
+- ## Riassunto
+	- la complessità di un algoritmo dipende della mole dei dati del problema da risolvere. L'individuazione della dimensione dei dati è abbastanza semplice
+	- Determinare la complessità in tempo (o in spazio) di un algoritmo significa determinare una funzione di complessità *f(n)* che fornisce la misura del tempo (o dello spazio di memoria occupato), al variare della dimensione dei dati *n*.
+		- #+BEGIN_NOTE
+		  **la dimensione dei dati *n* non va mai considerata come complessità ottima, media e pessima**
+		  #+END_NOTE
+	- Le funzioni di complessità:
+		- assumono solo valori positivi
+		- sono crescenti rispetto alla dimensione dei dati
+- ## Comportamento asintotico
+	- per semplificare l'analisi, si ritiene sufficiente **stabilire il comportamento asintotico quando le dimensioni dell'input tendono all'infinito**.  Si trascurano costanti moltiplicative e termini additivi di ordine inferiore
+	- due programmi i cui costi sono espressi rispettivamente dalle funzioni *(3+n)* e *(100n + 3027)* sono caratterizzati dalla stessa complessità asintotica
+		- *(3+n)* esprime un costo minore della funzione (100*n +3027), infatti quest'ultima è approssimabile al più come (100*n).
+		- #+BEGIN_NOTE
+		  Ignorare le costanti moltiplicative e i termini additivi di ordine inferiore, l'analisi viene semplificata e le valutazioni approssimate, forniscono risultati significativi poiché validi per *n* che tende ad infinito
+		  #+END_NOTE
+	- lo studio asintotico offre un criterio chiaro per confrontare due algoritmi
+	- **ESEMPI**
+		- ![image.png](../assets/image_1670436553407_0.png){:height 167, :width 494}
+	- ![image.png](../assets/image_1670436573714_0.png){:height 170, :width 439}
+- ## Notazioni
+	- **O(f(n))** è l'insieme di tutte le funzioni *g(n)* tali che esistono due costanti positive *c* e *m* per cui:
+		- **g(n) <= c * f(n) per ogni n>=m**
+		- in altre parole significa che si trovano 2 costanti tali per cui la prima definisce la soglia oltre la quale la funzione va oltre l'altra, e C è una costante moltiplicativa che  moltiplica f(n), significa che facilmente si fa superare una funzione oltre l'altra dato un valore, moltiplicando una funzione o l'altra. Le funzioni corrono a più infinito allo stesso modo. si definiscono insiemi di funzioni che corrono allo stesso modo
+	- **g(n) appartiene O(f(n))** si legge:
+		- g(n) è di ordine f(n)
+		- fornisce un **limite superiore** al comportamento asintotico della funzione g, **ovvero g non si comporta asintoticamente peggio di f**
+- ## Proprietà
+	- ![image.png](../assets/image_1670606464861_0.png)
+- ## Regole per la delimitazione superiore di complessità
+	- **REGOLA 1**
+		- si supponga che il programma è composta da due parti **P** e **Q** che si eseguono **sequenzialmente** e che i costi rispettivi siano:
+			- S(n) = O(*f*(n))     (costo di P)
+			- T(n) = O(*g*(n))    (costo di Q)
+		- allora il costo del programma è O(max(*f*(n), g(n)))
+			- in altre parole il costo è il massimo tra f(n) e g(n)
+	- **REGOLA 2** (in caso di esecuzione di procedure o funzioni)
+		- si supponga che un programma richieda per *k* volte l'esecuzione di una istruzione composta o attivazione di una procedura, il cui costo è *f*(n), il costo relativo all'esecuzione i-esima, *i=1,2,....,k*. 
+		  Il costo complessivo del programma è:
+			- ![image.png](../assets/image_1670607516508_0.png)
+	- **REGOLA 3** (istruzione dominante)
+		- si supponga che un programma contenga un'istruzione dominante che nel caso peggiore di input di dimenisone n, viene eseguita d(n) volte. La delimitazione superiore alla complessità del programma è O(d(n))
+			- #+BEGIN_NOTE
+			  per individuare un'istruzione dominante è sufficiente, in molti casi esaminare le operazioni contenute nei cicli interni del programma
+			  #+END_NOTE
+				- ESEMPIO: nel caso della ricerca sequenziale di prima le istruzioni 3 e 4 sono dominanti perchè eseguite al peggio n volte
+- ## Istruzione dominante
+	- DEF: sia dato:
+		- un programma o algoritmo **P**
+		- il cui costo di esecuzione è **t(n)**.
+		- Un'istruzione od operazione si dice **domiante** se:
+			- per ogni intero **n**, essa viene eseguita, nel caso peggiore di input avente dimensione **n**, un numero di volte **d(n)** che verifica la seguente condizione
+				- > *t(n) < a * d(n) + b*
+				- per opportune costanti **a** e **b**
+	- in altre parole, è un'istruzione che viene eseguita per un numero di volte proporzionale al costo dell'intero programma
+	- #+BEGIN_NOTE
+	  in un programma più istruzioni o operazioni possono essere dominanti ed è possibile che un programma non ne contenga affatto
+	  #+END_NOTE
+- ## Classi di complessità
+	- Classi categorizzate in base all'analisi di complessità asintotica
+		- O(1): costante
+			- si fa un numero costante di operazioni indipendentemente dalla dimensione del problema
+		- O(logn): logaritmica
+			- ricerca binaria o dicotomica
+		- O(n): lineare
+			- ricerca lineare su vettore non ordinato
+		- O(nlogn): nlogn
+			- algoritmi di ordinamento "quick sort"
+		- O(n^2): quadratica
+		- O(n^3): cubica
+		- O(a^n)    a>1: esponenziale
+		- #+BEGIN_NOTE
+		  i più efficienti sono quelli con complessità costante, i peggiori con complessità esponenziale
+		  #+END_NOTE
+			- ![image.png](../assets/image_1670610582577_0.png){:height 319, :width 463}
+- ## Complessità dei problemi
+	- è impossibile creare algoritmi che abbiano complessità inferiore a quella del problema
+- ## Scomposizione dei costi
+	-

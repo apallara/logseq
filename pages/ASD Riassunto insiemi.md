@@ -1,0 +1,8 @@
+- gli insiemi sono collezioni di elementi di tipo omogeneo che possono essere riportati una sola volta.
+  Gli insiemi si posso rappresentare mediante l'uso di liste non ordinate od ordinate e le relative realizzazioni collegate o sequenziali. 
+  In particolare la realizzazione collegata della lista prevede di memorizzare ogni elemento ed un puntatore al successivo, l'ultimo elemento ha un puntatore nullo, infine è necessario un puntatore al primo elemento. Le operazioni di inserimento e cancellazioni hanno cc costante perchè è necessario aggiornare solo i puntatori. L'operazione di lettura richiede cc O(n). 
+  La rappresentazione sequenziale della lista prevede l'uso di un vettore, in questo caso l'inserimento e cancellazione richiedono cc O(n) visto che sarà necessario eseguire lo spostamento dei restanti elementi, mentre l'operazione di lettura prevede cc O(1).
+  Altra possibile realizzazione è quella del vettore booleano. Viene istanziato un vettore almeno pari al più grande valore degli elementi dell'insieme, quindi se un elemento è presente si imposterà a vero la cella corrispondente. Vi sono diversi svantaggi tra i quali l'impossibilità di rappresentare elementi diversi agli interi (a meno di ricondurre un tipoelem ad intero) e la necessità di istanziare la dimensione di un vettore con il valore pari all'elemento più grande, anche se nell'insieme è presente anche un solo elemento saranno sprecate tutte le celle del vettore. Esempio insieme I=(1000), sarà necessario un vettore di dimensione 1000 per rappresentare questo insieme.
+  Oltre alle operazioni di inserimento, cancellazione e lettura sugli insiemi è possibile eseguire qualsiasi operazione insiemistica
+-
+- [[ASD insiemi]]

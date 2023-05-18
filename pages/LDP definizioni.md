@@ -1,0 +1,90 @@
+- ## Definizioni
+	- **alfabeto**:
+	  id:: 64006c03-8d93-424a-86a8-ef291cb51ee4
+	  collapsed:: true
+		- sequenza finita di simboli x_{1}, x_{2}, ..., x_{n} dove ogni x_{1} è preso da uno stesso alfabeto x
+			- ESEMPIO:
+				- X={0, 1}       [alfabeto]
+				- 01001          [parola]
+		- IN ALTRE PAROLE: insieme finito, non vuoto di simboli
+	- **lunghezza della parola**:
+	  collapsed:: true
+		- quantità di simboli contenuti in una parola
+			- ESEMPIO:
+				- |010011|=6
+				- λ = parola vuota, lunghezza 0
+				- ε = parola vuota, lunghezza 0
+		- λ parola vuota |λ| = 0
+	- **X***:
+	  collapsed:: true
+		- **insieme** di tutte le stringhe di lunghezza finita sull'alfabeto X
+			- ESEMPIO:
+				- se X={0,1} allora X*={λ, 0, 1, 00, 11, 01, 10, 10100, ...}
+	- **uguaglianza di stringhe**:
+	  collapsed:: true
+		- due stringhe sono uguali se i simboli letti da SX a DX coincidono
+	- **concatenazione (prodotto)**:
+	  collapsed:: true
+		- dato α e X* una stringa di lunghezza *m* e β∈X* una stringa di lunghezza *n*, la concatenazione di α e β denotata con **αβ** o **α*β**
+		  collapsed:: true
+			- #+BEGIN_NOTE
+			  **β∈X*** si legge β **è parola di** X*
+			  #+END_NOTE
+			- ESEMPIO:
+			  collapsed:: true
+				- α=x_{1}, x_{2}, ..., x_{m} e β=x'_{1}, x'_{2}, ..., x'_{n}
+				- si ottiene x_{1}, x_{2}, ..., x_{m},x'_{1}, x'_{2}, ..., x'_{n}
+		- PROPRIETA'
+			- la concatenazione è un'operazione binaria su X*
+				- °: X* x X* --> X*
+			- è associativa
+			- non commutativa: ∃α,β∈X*: αβ≠βα
+			- ha elemento neutro: λα=αλ=α
+			- dunque (X*, *) è monoide non commutativo
+	- **prefisso e suffisso**:
+	  collapsed:: true
+		- se γ∈X* è della forma γ=αβ, ove α,β∈X*, allora α è un prefisso di γ e β è un suffisso di γ
+	- **sottostringa**:
+	  collapsed:: true
+		- se δ,β∈X* e δ è nella forma δ=αβγ, ove α,β∈X* allora β è una sottostringa di δ
+		  id:: 64007559-5d4a-4a29-ba5e-fdd8fd32b0e4
+			- #+BEGIN_NOTE
+			  δ=αβγ si legge: Delta ottenuto dalla concatenazione di αβγ
+			  #+END_NOTE
+	- **potenza di una stringa**:
+	  collapsed:: true
+		- data una stringa α su X*, la potenza h-esima di α è definita (induttivamente) come segue
+		- ![image.png](../assets/image_1677752491263_0.png){:height 103, :width 298}
+		- #+BEGIN_NOTE
+		  la potenza h-esima di una stringa è un caso speciale di concatenazione ma eseguendo l'operazione sulla stringa stessa
+		  #+END_NOTE
+	- **potenza di un alfabeto**:
+	  collapsed:: true
+		- dato un alfabeto X, si pone:
+			- ![image.png](../assets/image_1677755856413_0.png){:height 138, :width 453}
+			- ![image.png](../assets/image_1677755887492_0.png){:height 242, :width 460}
+	- **linguaggio formale**
+	  collapsed:: true
+		- un linguaggio formale *L* su un alfabeto *X* è un sottoinsieme di X*
+			- L⊆X*     i sottoinsiemi di X*
+			- ESEMPIO:
+				- il linguaggio delle parentesi ben formate è un linguaggio formale in quanto, denotato con M tale linguaggio, si ha:
+					- M⊂{ (, ) }*
+	- **linguaggio**
+		- insieme finito o infinito dei programmi ben costruiti sintatticamente (che rispettano la sintassi)
+	- **produzioni** = **regole di produzione**:
+	  collapsed:: true
+		- coppia di parole, una SX e una DX dove la parola SX è composta da un numero qualsiasi di simboli di cui almeno uno nonterminale, mentre a DX si possono avere w* parole
+	- **semantica**: significato corretto
+	- **sintattica**: corretta struttura grammaticale
+	- **alberi di derivazione**:
+	  collapsed:: true
+		- le derivaz di una gramm CF possono essere rappresentate da alberi.
+		- la sequ di regole sintattiche usate er generare una stringa w da una gramm G di simbolo iniziale S definisce la struttura di w che potrebbe essere rappresentata da una delle derivazioni S-->W (*)
+	- **lunghezza di un cammino**:
+	  id:: 641c048b-e32a-4895-9777-f1567a5cd62d
+		- dato un albero di derivazione, la lunghezza del cammino è la quantità di nonterminali che si incontrano partendo dalla radice per arrivare alla foglia
+	- **altezza o profondità**:
+	  id:: 641c04e1-55f4-4b72-99f1-f4fec501c651
+		- è definita dalla lunghezza del cammino più lungo su un determinato albero
+	-
