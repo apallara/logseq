@@ -5,4 +5,22 @@
 		- distinguere i livelli di trauma
 		- determinare dal tipo di lesione il tipo di danno
 		- valutare continuamente lo stato i coscienza
-		- attenzionalre l'ipossia, ipotensione e ipovolemia
+		- attenzionare l'ipossia, ipotensione e ipovolemia
+	- ### COSA SAPER FARE
+		- ollare
+		- estricazione del capo e estricazione
+		- aspiratore secreti
+		- uso presidi
+-
+- ## TRAUMA CRANICO E VERTEBRALE
+	- DEF: qualunque evento violento esterno che alteri l'equilibrio morfo-funzionale, superficiale e/o profondo del cranio dovuto:
+		- oggetto che esercita pressione o penetrazione nel cranio
+		- urto del cranio contro qualche corpo rigido
+		- azione di sfregamento o trazione del cranio
+	- CARATTERISTICHE SCATOLA CRANICA
+		- composizione a "tessere"
+		- funzione di contenimento
+		- funzione di protezione
+- ## LEZIONI NEL TRAUMA CRANICO
+	- **Lesioene primaria**
+		- lesioni dirette che interessano il cuoiio capellto, teca cranica
