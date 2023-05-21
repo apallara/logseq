@@ -201,4 +201,10 @@
 		- si intende asimmetria in un movimento che lo dovrwbbw essere
 	- trauma cranico con frattura vvallata o della basse
 	- trauma del rachide con deficit M/S
-	-
+	- ustione 2/3 grado
+	- trauma toracico con lembo mobile
+	- trauma toracico chiuso con PAS<90 o FR>35 o SPO2<90%
+	- trauma addominale con PAS <90
+	- evidenza fi trauma maggiore o esposto del bavino
+	- ferita penetrante (esclusi gli arti)
+	- frattura >=2 ossa lunghe prossimali
