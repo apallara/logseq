@@ -100,14 +100,17 @@
 				- FC
 		- ### **C** --> Circolo ed emorragie
 		  logseq.order-list-type:: number
+		  collapsed:: true
 			- compressione diretta
 			- compressione a monte
 			- turniquet
 			- **VALUTAZIONE**
+			  collapsed:: true
 				- polso
 				- pressione
 				- refill capillare
 			- **CRITERI ALLERTAMENTO ALS**
+			  collapsed:: true
 				- PA sistolica <100
 				- FC >120
 				- polso radiale assente
@@ -115,7 +118,26 @@
 					- estremità fredde
 					- tachipnea
 					- agitazione
-					-
+					- confusione
+					- sopore
+		- ### **D** -> Disability
+		  logseq.order-list-type:: number
+		  collapsed:: true
+			- apertura occhi
+			- risposta verbale
+			- risposta motoria
+			- calcolo GCS
+			- **CRITERI ALLERTAMENTO ALS**
+			  collapsed:: true
+				- AVPU=P||U
+				- deficit sensitivo-motori
+		- ### **E** -> exposure
+		  logseq.order-list-type:: number
+			- rimozione vestiti
+			- ricerca sanguinamenti
+			- valutare e trattare le lesioni minori
+			- prevenire ipotermia
+		- logseq.order-list-type:: number
 	- valutaz secondaria
 	  logseq.order-list-type:: number
 	- trattamento
@@ -123,6 +145,7 @@
 	- trasporto e monitoraggio
 	  logseq.order-list-type:: number
 - ## APPROCCI
+  collapsed:: true
 	- SCOOP AND RUN
 	- STAY AND PLAY
 	- RUN AND PLAY: nuovo approccio, si gioca nel trasporto
