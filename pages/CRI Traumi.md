@@ -23,6 +23,7 @@
 		- funzione di contenimento
 		- funzione di protezione
 - ## LEZIONI NEL TRAUMA CRANICO
+  collapsed:: true
 	- **Lesioene primaria**
 	  collapsed:: true
 		- lesioni dirette che interessano il cuoiio capellto, teca ossea,...
@@ -76,6 +77,7 @@
 			- controllo della glicemia
 			- NOTA: fare sempre attenzione alla persona con intossicazione etilica che può trarre in inganno (lo distingue l'odore di alcol)
 	- **VALUTAZIONE DELLE LESIONI FACCIALI**
+	  collapsed:: true
 		- deformità e asimmetrica del viso, occhi e bocca
 		- movimenti innaturali delle ossa facciali
 		- ematormi periorbitali (occhi neri, occhi di procione)
@@ -86,4 +88,22 @@
 		- presenza di oggetti conficcati
 			- NON RIMUOVERE
 - ## LESIONI DELLA COLONNA VERTEBRALE
-	-
+  collapsed:: true
+	- LESIONE SPINALE:
+		- SINTOMI
+			- dolore localizzato a testa e collo (può mancare del tutto)
+			- intorpidimento
+			- formicolio degli arti (parestesie) e debolezza
+			- paralisi delle estremità
+			- presenza di deformità, edema locale, ematomi
+			- respiro diaframmatico e affannoso
+				- NOTA: probabile lesione alta della colonna
+			- schock cardiaco
+		- COSA FARE:
+			- KED
+			- SPINALE
+			- Materassino a depressione
+			- rivalutazione in etinere, fino al PS
+			- eseguire eventuale pronosupinazione
+- ## TRAUMA TORACICO ADDOMINALE
+	- OBIETTIVI: identificare le principali lesioni di
