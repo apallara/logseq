@@ -113,12 +113,14 @@
 			- si percepiscono i sintomi
 		- **aperte**
 			- visibili
+			- provocati da oggetti che penetrano nel corpo
 		- COSTE:
 			- 123 raramente fratturavili associate a cranio, collo, polmini e vasi
 			- da 4 a 10 facilmente fratturabili
 			- 11 e 1 raramente fratturabili, forse associate traumi a fegato e milza
 			- sterno associata a lesioni pokmonari e cariache
 	- **SEGNI E SINTOMI**
+	  collapsed:: true
 		- deformità o movimenti anomali del torace
 		- dolore localizzato e respirazione superficiale
 		- posizione antalgica
@@ -128,6 +130,7 @@
 		- possibile deviazione della trachea
 		- shock
 	- ### LEMPO o VOLET COSTALE
+	  collapsed:: true
 		- è un TRAUMA CHIUSO con fratture costali multiple adiacenti
 		- una parte del roace perde continuità con il resto della gabbia toracica
 		- ....
@@ -139,6 +142,7 @@
 			- cianosi
 			- cute pallida
 	- ### PNEUMOTORACE
+	  collapsed:: true
 		- indica presenza di aria nella cavità pleurica, viene persa la pressione negatica e il polmone collassa
 		- può essere
 			- SPONTANEO: causa da penetrazione di oggetto che perfora la pleura e il polmone non si espande correttamente
@@ -148,10 +152,25 @@
 			- dolore toacico
 			- riduzione dei rumori respiratori e moviemnti irregolari della parete toracica
 			- difficoltà respiratoria (dispnea)
-			- dilatazione delle vene del colo (turgore giugulare)+
+			- dilatazione delle vene del colo (turgore giugulare)
 		- COSA FARE
 			- sicurezza, situazione (VALUTAZIONE)
 			- ABCDE
 			- ossigeno
 			- se aperto creare la VALVOLA FLUTTER UNIDIREZIONALE
 			- NON RIMUOVERE corpi estranei
+	- ### EMOTORACE
+	  collapsed:: true
+		- accumulo di sangue nella cavità pleurica costringendo il polmone
+		- COSA FARE:
+			- immobilizzazione paziente
+			- trasporto in PS
+			- ossigeno
+	- ### TAMPONAMENTO CARDIACO
+		- accumulo di sangue intorno al cuore
+			- SEGNI E SINTOMI:
+				- turgore giugulare
+				- ipovolemia
+				- ipotensione
+	- ### TRAUMA ADDOMINALE
+		-
