@@ -76,10 +76,46 @@
 				- edema delle prime vie aeree
 				- ematomi pulsanti al collo
 				- enfisema sottocutaneo al collo
-		- **B** -> respiro e pervietà vie aeree, prevenire ipossia
+		- ### **B** -> respiro e pervietà vie aeree, prevenire ipossia, trattare alterazioni della ventilazione
 		  logseq.order-list-type:: number
-			-
-		- logseq.order-list-type:: number
+		  collapsed:: true
+			- **OPACS**
+			  collapsed:: true
+				- **O**: osserva il arattere del respiro ed espanzione toracica
+				- **P**: palpare il torace e il resto del corpo alla ricerca di crepitii o deformità
+				- **A**: ascoltare i gorcoglii, crepitii, rumori respiratori
+				- **C**: 
+				  #+BEGIN_WARNING
+				  
+				  #+END_WARNING
+				- **S**: saturimetro
+			- **CRITERI ALERTAMENTO ALS**
+			  collapsed:: true
+				- ferite penetranti
+				- asimmetrica del torace
+				- dspnea grave
+				- enfisema sottocutaneo (crepitii)
+				- FR
+				- SPO2
+				- FC
+		- ### **C** --> Circolo ed emorragie
+		  logseq.order-list-type:: number
+			- compressione diretta
+			- compressione a monte
+			- turniquet
+			- **VALUTAZIONE**
+				- polso
+				- pressione
+				- refill capillare
+			- **CRITERI ALLERTAMENTO ALS**
+				- PA sistolica <100
+				- FC >120
+				- polso radiale assente
+					- cute pallida e sudaat
+					- estremità fredde
+					- tachipnea
+					- agitazione
+					-
 	- valutaz secondaria
 	  logseq.order-list-type:: number
 	- trattamento
