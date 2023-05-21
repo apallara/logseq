@@ -66,7 +66,6 @@
 			- PRE: p = pos(i) 1<=i<=n
 			- POST: a = a(i)
 		- **scrivilista(a, p, l) = l'**
-		  collapsed:: true
 			- PRE: p = pos(i) 1 <= i <= n
 			- POST: l' = <a1, a2, ..., a_{n-1}, **a**, a_{i+1}, ..., a_{n}>
 			- #+BEGIN_WARNING

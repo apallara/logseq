@@ -32,7 +32,6 @@
 		- colpo d'occhio
 	- valutaz primaria
 	  logseq.order-list-type:: number
-	  collapsed:: true
 		- ### **A**-> vie aeree e rachide cervicale
 		  logseq.order-list-type:: number
 		  collapsed:: true
@@ -101,17 +100,14 @@
 				- FC
 		- ### **C** --> Circolo ed emorragie
 		  logseq.order-list-type:: number
-		  collapsed:: true
 			- compressione diretta
 			- compressione a monte
 			- turniquet
 			- **VALUTAZIONE**
-			  collapsed:: true
 				- polso
 				- pressione
 				- refill capillare
 			- **CRITERI ALLERTAMENTO ALS**
-			  collapsed:: true
 				- PA sistolica <100
 				- FC >120
 				- polso radiale assente
@@ -181,6 +177,7 @@
 	  logseq.order-list-type:: number
 	- trasporto e monitoraggio
 	  logseq.order-list-type:: number
+	  collapsed:: true
 		- monitoraggio continuo
 		- rivalutazione ABCDE
 		- compilazione scheda paziente dettagliata
@@ -190,6 +187,7 @@
 	- STAY AND PLAY
 	- RUN AND PLAY: nuovo approccio, si gioca nel trasporto
 - ## CODICE ROSSO PER DINAMICA
+  collapsed:: true
 	- caduta da altezza >3m
 	- presenza di persone decedurte nello stesso veicolo
 	- impatto con proiezione a distanza
@@ -197,6 +195,7 @@
 	- necessità di estricazione per >20minuti
 	- età<5anni per che traumi piccoli
 - ## CRITERI ALLERTAMENTO ALS
+  collapsed:: true
 	- GCS<=13 o deficit di lato
 		- si intende asimmetria in un movimento che lo dovrwbbw essere
 	- trauma cranico con frattura vvallata o della basse

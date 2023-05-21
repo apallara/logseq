@@ -88,7 +88,6 @@
 		- presenza di oggetti conficcati
 			- NON RIMUOVERE
 - ## LESIONI DELLA COLONNA VERTEBRALE
-  collapsed:: true
 	- LESIONE SPINALE:
 		- SINTOMI
 			- dolore localizzato a testa e collo (può mancare del tutto)
@@ -210,6 +209,7 @@
 					- coprire con teli sterili
 					- tenere umidi i teli con soluzione fisiologica
 - ## LESIONI ALL'APPARATO LOCOMOTORE
+  collapsed:: true
 	- lesioni possibili
 	  collapsed:: true
 		- scheletriche (fratture)
@@ -310,6 +310,7 @@
 	- stecco bende a depressione
 	- immobilizzatori per arti superiori
 - ## LESIONI DI APPARATO TEGUMENTARIO
+  collapsed:: true
 	- **SEGNI E SINTOMI**
 	  collapsed:: true
 		- dolore
