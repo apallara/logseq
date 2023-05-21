@@ -34,6 +34,7 @@
 		- ipossia
 		- acapnia/ipercapnia
 	- ### CALSSIFICAZIONE DEL TRAUMA CRANICO
+	  collapsed:: true
 		- si classifica in base a
 		- meccanismo
 		  logseq.order-list-type:: number
@@ -55,3 +56,21 @@
 			  logseq.order-list-type:: number
 			- AVPU
 			  logseq.order-list-type:: number
+	- **SEGNI E SINTOMI DI ALLARME DI TRAUMA CRANICO**
+		- ATTENZIONE: mantenere sempre sveglio il paziente, se si assopisce aggraverà le sue condizioni
+		- SINTOMI:
+			- sonnolenza o ifficoltà al risveglio
+			- nausea e vomito a getto
+			- convulsioni e tremori
+			- liquido chiaro o sangue da oreccihio o naso
+			- cefalea diffusa e severa
+			- perdita di forza in uno o più arti
+			- confusione o comportamento anomalo
+			- disturbo di uno o più sensi
+			- asimmetria delle pupille
+				- vista alterata
+			- acufene, vista appannata
+			- tachicardia/bradicardia
+			- temperatura del corpo tachitermia/braditermia
+			- controllo della glicemia
+			- NOTA: fare sempre attenzione alla persona con intossicazione etilica che pu
