@@ -1,0 +1,8 @@
+- ## TRAUMA
+	- generati da sollecitazioni esterne che causano un danno al paziente più o meno grave
+	- da quel momento in poi il paziente è di "cristallo"
+	- ### COSA SAPERE
+		- distinguere i livelli di trauma
+		- determinare dal tipo di lesione il tipo di danno
+		- valutare continuamente lo stato i coscienza
+		- attenzionalre l'ipossia, ipotensione e ipovolemia
