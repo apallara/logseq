@@ -179,11 +179,26 @@
 		  logseq.order-list-type:: number
 	- trattamento
 	  logseq.order-list-type:: number
-		- logseq.order-list-type:: number
 	- trasporto e monitoraggio
 	  logseq.order-list-type:: number
+		- monitoraggio continuo
+		- rivalutazione ABCDE
+		- compilazione scheda paziente dettagliata
 - ## APPROCCI
   collapsed:: true
 	- SCOOP AND RUN
 	- STAY AND PLAY
 	- RUN AND PLAY: nuovo approccio, si gioca nel trasporto
+- ## CODICE ROSSO PER DINAMICA
+	- caduta da altezza >3m
+	- presenza di persone decedurte nello stesso veicolo
+	- impatto con proiezione a distanza
+	- arrotamento (schiacciamento da mezzo in movimento)
+	- necessità di estricazione per >20minuti
+	- età<5anni per che traumi piccoli
+- ## CRITERI ALLERTAMENTO ALS
+	- GCS<=13 o deficit di lato
+		- si intende asimmetria in un movimento che lo dovrwbbw essere
+	- trauma cranico con frattura vvallata o della basse
+	- trauma del rachide con deficit M/S
+	-
