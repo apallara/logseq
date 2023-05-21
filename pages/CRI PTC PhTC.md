@@ -32,20 +32,24 @@
 		- colpo d'occhio
 	- valutaz primaria
 	  logseq.order-list-type:: number
-		- **A**-> vie aeree e rachide cervicale
+		- ### **A**-> vie aeree e rachide cervicale
 		  logseq.order-list-type:: number
+		  collapsed:: true
 			- stabilizzazione del capo
 			- valutaz stato coscienza (stimolo doloroso)
 			- posizione neutra capo
 			- ispezione visiva cavo orale
 			- rimozione corpi estranei
+			  collapsed:: true
 				- aspiratore se serve
 			- ispezione del collo (giugulari, trachea)
+			  collapsed:: true
 				- turgore giugulare
 				- allineamento trachea
 			- posizionamento collare cervicale
 			- ossigenoterapia
 			- **VALUTAZIONE**
+			  collapsed:: true
 				- pervie: verbalizzazione, dolore patologico
 					- quindi immpobilizzare il capo e vai in fase B
 				- a rischio: cosicenza alterata, problema evolutivo
@@ -53,6 +57,7 @@
 				- ostruite: respiro rumoroso, gorgoglii
 					- mantenere in asse, liberare vie aeree e allertare MSA
 			- **COSA FARE**
+			  collapsed:: true
 				- posizionamento collare
 					- controllo giugulare
 					- controllo sangue dietro collo
@@ -61,9 +66,19 @@
 					- controllo giugulare
 				- non si mette il collare se:
 					- non ci sono sospetti di trauma al collo
-		- **B** -> respiro e pervietà vie aeree
+				- ossigeno ad alti flussi
+			- **criteri di allertamento ALS**
+			  collapsed:: true
+				- alterazioni coscienza
+				- respiro rumoroso
+				- trauma facciale con emorragia profusa
+				- vomito a getto
+				- edema delle prime vie aeree
+				- ematomi pulsanti al collo
+				- enfisema sottocutaneo al collo
+		- **B** -> respiro e pervietà vie aeree, prevenire ipossia
 		  logseq.order-list-type:: number
-		- logseq.order-list-type:: number
+			-
 		- logseq.order-list-type:: number
 	- valutaz secondaria
 	  logseq.order-list-type:: number
