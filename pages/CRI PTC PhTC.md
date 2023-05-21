@@ -45,12 +45,24 @@
 				- allineamento trachea
 			- posizionamento collare cervicale
 			- ossigenoterapia
+			- **VALUTAZIONE**
+				- pervie: verbalizzazione, dolore patologico
+					- quindi immpobilizzare il capo e vai in fase B
+				- a rischio: cosicenza alterata, problema evolutivo
+					- mantenere in asse e mantenre pervie le viee aeree
+				- ostruite: respiro rumoroso, gorgoglii
+					- mantenere in asse, liberare vie aeree e allertare MSA
+			- **COSA FARE**
+				- posizionamento collare
+					- controllo giugulare
+					- controllo sangue dietro collo
+					- misurare dimensione collare
+					- posizionare collare
+					- controllo giugulare
+				- non si mette il collare se:
+					- non ci sono sospetti di trauma al collo
 		- **B** -> respiro e pervietà vie aeree
 		  logseq.order-list-type:: number
-			- VALUTAZIONE
-				- pervie: verbalizzazione, dolore patologico
-				- a rischio: cosicenza alterata, problema evolutivo
-				- ostruite: respiro rumoroso,
 		- logseq.order-list-type:: number
 		- logseq.order-list-type:: number
 	- valutaz secondaria
