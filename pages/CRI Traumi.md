@@ -217,6 +217,7 @@
 		- muscolari  (strappi, contratture)
 		- tutte accumonate da possibile trauma da schiacciamento
 	- ### VALUTAZIONE
+	  collapsed:: true
 		- Sicurezza
 		- dinamica
 		- ABCD**E**
@@ -225,3 +226,16 @@
 			- rilevazione della temporature a del colorito della cute a valle della lesione
 		- anamnesi mirata (terapia assunta, patologie)
 		- non farti prendere per il culo: fai attenzione alle lesioni distraenti
+	- **LESIONI SCHELETRICHE**
+		- def. interruzione di continuità della struttura ossea
+		- **SEGNI E SINTOMI**
+			- dolore forte e costante che aumenta con i movimenti
+			- deformazione, perdita del normale profilo anatomico,  posizione anomala dell'arto
+			- gonfiore ed alterazione del colore della pelle
+			- perdita di funzionalità
+			- perdita del polso a valle
+			- perdita della sensibilità
+			- esposizione del tessuto osseo (frattura esposta)
+		- **COSA FARE**
+			- immobilizzazione
+			- valutzione della presenza del polso sens
