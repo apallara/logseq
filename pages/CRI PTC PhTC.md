@@ -32,6 +32,26 @@
 		- colpo d'occhio
 	- valutaz primaria
 	  logseq.order-list-type:: number
+		- **A**-> vie aeree e rachide cervicale
+		  logseq.order-list-type:: number
+			- stabilizzazione del capo
+			- valutaz stato coscienza (stimolo doloroso)
+			- posizione neutra capo
+			- ispezione visiva cavo orale
+			- rimozione corpi estranei
+				- aspiratore se serve
+			- ispezione del collo (giugulari, trachea)
+				- turgore giugulare
+				- allineamento trachea
+			- posizionamento collare cervicale
+			- ossigenoterapia
+		- **B** -> respiro e pervietà vie aeree
+		  logseq.order-list-type:: number
+			- VALUTAZIONE
+				- pervie: verbalizzazione, dolore patologico
+				- a rischio: cosicenza alterata, problema evolutivo
+				- ostruite: respiro rumoroso,
+		- logseq.order-list-type:: number
 		- logseq.order-list-type:: number
 	- valutaz secondaria
 	  logseq.order-list-type:: number
