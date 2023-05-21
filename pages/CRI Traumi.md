@@ -173,4 +173,27 @@
 				- ipovolemia
 				- ipotensione
 	- ### TRAUMA ADDOMINALE
-		-
+		- interessano FEGATO e MILZA con conseguente forte sanguinamento
+		- reni
+		- stomaco e intestino
+			- passaggio di materiale nella cavità peritoneale
+			- ### TRAUMA ADDOMINALE LESIONI APERTE
+				- prodotti da traumi penetranti
+				- gravi lesioni degli organi addominali o eviscerazioni
+				- emorragia
+				- shock ipovolemico
+			- ### TRAUMA ADDOMINALE E LESIOI CHIUSE
+				- prodotte da traumi contusivi che possono causare ....
+				- SEGNI E SINTOMI
+					- posiione antalgica
+					- evidenza di lesioni contusive o penetranti
+					- dolore addomiale localizzato
+					- contrattura muscolare della parete addominale
+					- nausea, vomito talvolta con emissione di sangue
+					- schick
+				- **EVISCERAZIONE**
+					- lascaire il mondo come sta
+					- coprire con teli sterili
+					- tenere umidi i teli con soluzione fisiologica
+					-
+-
