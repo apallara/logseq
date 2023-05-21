@@ -321,7 +321,9 @@
 		- esposizione dei tessuti/organi sottostanti
 		- presenza di corpi estranei
 	- ### FERITE
+	  collapsed:: true
 		- **COSA FARE**
+		  collapsed:: true
 			- lavarsi le mani, DPI
 			- lavare con soluzione fisiologica o acqua corrente
 			- valuta la ferita
@@ -329,10 +331,12 @@
 			- se presente corpo estraneo NON ESTRARRE
 			- applicare una medicazione
 		- **MATERIALI DI MEDICAZIONE**
+		  collapsed:: true
 			- disinfettanti
 			- garze
 			- bende
 		- ### CORPO ESTRANEO CONFICCATO
+		  collapsed:: true
 			- OGGETTO INAMOVIBILE
 				- frenare emorragia con compressione a distanza
 				- non rimuovere
@@ -345,6 +349,7 @@
 				- ipovolemia
 				- lesioni degli organi profondi
 		- ### AMPUTAZIONE
+		  collapsed:: true
 			- di 2 tipi
 				- PARZIALE
 				- COMPLETO
@@ -387,4 +392,43 @@
 			- basi
 			- agenti chimici
 			- **COSA FARE**
-				- capire la fonte lesiva, memorizzarla e comunicare in
+				- capire la fonte lesiva, memorizzarla e comunicare in PS e 118
+				- coprire
+				- trasportare
+		- **USTIONE ELETTRICA**
+			- rete elettrica domestica
+			- rete elettrica atmosferica
+			- spesso sono lesioni interne a carico del sistema nervoso
+			- **COSA FARE**
+				- staccare corrente
+				- ABCDE
+				- dinamica
+				- accurata valutazione della fase C
+				- trattare ustione
+				- valutazionedella lesione interna (medico)
+			- **SEGNI E SINTOMI**
+				- formicolio alle mani
+				- contratture muscolari
+				- aritmie pericolose per la vita
+				- effetti locali
+					- ustioni comuni causate da incendio di vesti
+					- ustione da scarica elettrica
+		- **MEDICAZIONI E BENDAGGI**
+			- garze
+			- bende
+	- **CONGELAMENTO**
+		- primo grado
+			- cute dura, macanza di sensibilità, colore violacea
+		- secondo grado
+			- tumefazione, colorito bluastro
+		- terzo grado
+			- morte cutanea
+		- in ogni caso **COSA FARE**
+			- portare in ambiente caldo
+			- no alcol
+			- tolgiere indumenti bagnati
+			- non frizionare
+			- non massaggiare
+			- ospedalizzare
+			- controllo funzioni vitali
+			-
