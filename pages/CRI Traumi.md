@@ -308,4 +308,12 @@
 	- stecco bende rigide
 	- stecco bende a depressione
 	- immobilizzatori per arti superiori
-	-
+- ## LESIONI DI APPARATO TEGUMENTARIO
+	- SEGNI E SINTOMI
+		- dolore
+		- emorragie
+		- gonfiore e alterazione del colorito
+		- perdita di funzionalità
+		- perdita del polso a valle
+		- perdita di sensibilità
+		-
