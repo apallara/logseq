@@ -226,9 +226,11 @@
 			- rilevazione della temporature a del colorito della cute a valle della lesione
 		- anamnesi mirata (terapia assunta, patologie)
 		- non farti prendere per il culo: fai attenzione alle lesioni distraenti
-	- **LESIONI SCHELETRICHE**
+	- ### **LESIONI SCHELETRICHE**
+	  collapsed:: true
 		- def. interruzione di continuità della struttura ossea
 		- **SEGNI E SINTOMI**
+		  collapsed:: true
 			- dolore forte e costante che aumenta con i movimenti
 			- deformazione, perdita del normale profilo anatomico,  posizione anomala dell'arto
 			- gonfiore ed alterazione del colore della pelle
@@ -238,4 +240,27 @@
 			- esposizione del tessuto osseo (frattura esposta)
 		- **COSA FARE**
 			- immobilizzazione
-			- valutzione della presenza del polso sens
+			- valutazione della presenza del polso sensibilità, temperature e colorito della cute a valle della lesione
+			- ghiaccio secco
+			- frattura esposta, proteggere il moncone, NO DISINFETTANTI
+			- se scomposta: non allineare l'arto
+		- **COMPLICANZE**
+			- lesioni valscolari
+			- ipovolemia
+			- lesioni nervose
+			- a distanza
+				- infezioni nella frattura esposta
+				- pseudo articolazione+
+	- ### LESIONI ARTICOLARI
+		- **distorsioni**
+			- lesioni chiuse senza interessamento cutaneo
+			- generalmente dovute a movimenti estrmi
+			- **SEGNI E SINTOMI**
+				- dolore che peggiora nei movimenti
+				- tumefazioni
+				- incapacità di carico di peso
+			- **COSA FARE**
+				- mantenere in scarico l'articolazione
+				- ghiaccio sulla parte
+				- valutare dal medico
+		-
