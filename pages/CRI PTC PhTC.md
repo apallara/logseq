@@ -161,12 +161,14 @@
 				- necessità di analgesia
 	- valutaz secondaria
 	  logseq.order-list-type:: number
+	  collapsed:: true
 		- obiettivo: ricerca tutti i dettagli tralasciati precedentemente
 		  logseq.order-list-type:: number
 		- nuovo esame TSTA-PIEDI
 		  logseq.order-list-type:: number
 		- SAMPLE
 		  logseq.order-list-type:: number
+		  collapsed:: true
 			- segni e sintomi
 			- allergie
 			- medicinali (attenzione a cumadi=anticoagulanti)
@@ -175,9 +177,9 @@
 			- evento
 		- qualsiasi evoluzione del paziente come alterazione dei parametri si esegue nuovamente la valutazione secondaria
 		  logseq.order-list-type:: number
-		- logseq.order-list-type:: number
 	- trattamento
 	  logseq.order-list-type:: number
+		- logseq.order-list-type:: number
 	- trasporto e monitoraggio
 	  logseq.order-list-type:: number
 - ## APPROCCI
