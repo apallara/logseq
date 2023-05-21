@@ -106,4 +106,25 @@
 			- rivalutazione in etinere, fino al PS
 			- eseguire eventuale pronosupinazione
 - ## TRAUMA TORACICO ADDOMINALE
-	- OBIETTIVI: identificare le principali lesioni di
+	- All'interno della cassa toracica ci sono organi vitali
+	- i traumi possono essere:
+		- **chiuse**
+			- non visibili
+			- si percepiscono i sintomi
+		- **aperte**
+			- visibili
+		- COSTE:
+			- 123 raramente fratturavili associate a cranio, collo, polmini e vasi
+			- da 4 a 10 facilmente fratturabili
+			- 11 e 1 raramente fratturabili, forse associate traumi a fegato e milza
+			- sterno associata a lesioni pokmonari e cariache
+	- **SEGNI E SINTOMI**
+		- deformità o movimenti anomali del torace
+		- dolore localizzato e respirazione superficiale
+		- posizione antalgica
+			- porta mano alla zona dolorante
+			- posizione anomala
+		- possibile turgore giugulare
+		- possibile deviazione della trachea
+		- shock
+	- ###
