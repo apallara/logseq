@@ -253,6 +253,7 @@
 				- pseudo articolazione+
 	- ### LESIONI ARTICOLARI
 		- **distorsioni**
+		  collapsed:: true
 			- lesioni chiuse senza interessamento cutaneo
 			- generalmente dovute a movimenti estrmi
 			- **SEGNI E SINTOMI**
@@ -263,4 +264,33 @@
 				- mantenere in scarico l'articolazione
 				- ghiaccio sulla parte
 				- valutare dal medico
-		-
+		- **lussazioni**
+			- perdita della congruità articolare tra due capi ossei
+			- generalmente lesioni chiuse
+			- generalmente dovute a movimenti estremi o pretrnaturali
+			- lussazioni recidivanti
+			- **SEGNI E SINTOMI**
+				- impotenza funzionale
+				- evidente deformazione articolare
+				- dolore che si acuisce con movimenti passivi
+			- **COSA FARE**
+				- no movimento
+				- ghiaccio sulla parte
+				- valutare dal medico in tempi apidi
+				- se la persona è abituata seguire le sue istruzioni
+		- **contusione muscolare**
+			- trauma chiuso interessante i piani cutanei, sottocutaei e muscolari
+		- **strappo muscolare**
+			- lesione di fibre muscolari
+				- 1 grado, 2 grado, 3 grado
+			- dolore ad insorgenza
+			- tumefazione o irregolarità del profilo
+			- **COSA FARE**
+				- riposo con parte in scarico
+				- ghiaccio
+		- **crampo**
+			- contrattura dolorosa e involontaria
+			- accumolo di acido lattico
+			- **COSA FARE**
+				- estendere il più possibile il muscolo in modo lento e graduale e mantenere per 15 secondi e poi rilasciare lentamente
+				- bagno caldo con sale marino grosso
