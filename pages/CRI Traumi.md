@@ -178,19 +178,28 @@
 		- stomaco e intestino
 			- passaggio di materiale nella cavità peritoneale
 			- ### TRAUMA ADDOMINALE LESIONI APERTE
+			  collapsed:: true
 				- prodotti da traumi penetranti
 				- gravi lesioni degli organi addominali o eviscerazioni
 				- emorragia
 				- shock ipovolemico
 			- ### TRAUMA ADDOMINALE E LESIOI CHIUSE
 				- prodotte da traumi contusivi che possono causare ....
-				- SEGNI E SINTOMI
+				- **SEGNI E SINTOMI**
 					- posiione antalgica
 					- evidenza di lesioni contusive o penetranti
 					- dolore addomiale localizzato
 					- contrattura muscolare della parete addominale
 					- nausea, vomito talvolta con emissione di sangue
-					- schick
+					- schick in progressivo aggravamento
+					- eviscerazione
+				- **COSA FARE**
+					- sicurezza scena
+					- ABCDE
+					- ossigeno
+					- posizione antalgica: supian, con arti inferiori flessi per ridurre la tensione dei muscoli addominali
+					- NON somministrare  NULLA per bocca
+					- NON rimuovere oggetti o corpi penetranti
 				- **EVISCERAZIONE**
 					- lascaire il mondo come sta
 					- coprire con teli sterili
