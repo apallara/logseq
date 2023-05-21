@@ -32,6 +32,7 @@
 		- colpo d'occhio
 	- valutaz primaria
 	  logseq.order-list-type:: number
+	  collapsed:: true
 		- ### **A**-> vie aeree e rachide cervicale
 		  logseq.order-list-type:: number
 		  collapsed:: true
@@ -133,22 +134,48 @@
 				- deficit sensitivo-motori
 		- ### **E** -> exposure
 		  logseq.order-list-type:: number
+		  collapsed:: true
 			- rimozione vestiti
 			- ricerca sanguinamenti
 			- valutare e trattare le lesioni minori
 			- prevenire ipotermia
 			- esame testa-piedi
+			  collapsed:: true
 				- testa
 				- collo
 				- torace
+				  collapsed:: true
 					- attenzione alla simmetria
 					- attenzione al movimento paradosso
 				- bacino
+				  collapsed:: true
 					- prova di carico per max 1 tentativo
 				- schiena
 				- arti superiori
+			- **CRITERI ALLERTAMENTO ALS**
+			  collapsed:: true
+				- amputrazione arti o parte di essi
+				- fratture prossimali
+				- ferita penetrante
+				- ustioni gravi ed estese
+				- necessità di analgesia
 	- valutaz secondaria
 	  logseq.order-list-type:: number
+		- obiettivo: ricerca tutti i dettagli tralasciati precedentemente
+		  logseq.order-list-type:: number
+		- nuovo esame TSTA-PIEDI
+		  logseq.order-list-type:: number
+		- SAMPLE
+		  logseq.order-list-type:: number
+			- segni e sintomi
+			- allergie
+			- medicinali (attenzione a cumadi=anticoagulanti)
+			- patologie
+			- l'ultimo pasto
+			- evento
+		- qualsiasi evoluzione del paziente come alterazione dei parametri si esegue nuovamente la valutazione secondaria
+		  logseq.order-list-type:: number
+		- logseq.order-list-type:: number
 	- trattamento
 	  logseq.order-list-type:: number
 	- trasporto e monitoraggio
