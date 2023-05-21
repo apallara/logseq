@@ -305,15 +305,53 @@
 			- tumefazione
 			- applicare ghiaccio e pochi movimenti
 - ## MEZZI DI IMMOBILIZZAZIONE
+  collapsed:: true
 	- stecco bende rigide
 	- stecco bende a depressione
 	- immobilizzatori per arti superiori
 - ## LESIONI DI APPARATO TEGUMENTARIO
-	- SEGNI E SINTOMI
+	- **SEGNI E SINTOMI**
+	  collapsed:: true
 		- dolore
 		- emorragie
 		- gonfiore e alterazione del colorito
 		- perdita di funzionalità
 		- perdita del polso a valle
 		- perdita di sensibilità
-		-
+		- esposizione dei tessuti/organi sottostanti
+		- presenza di corpi estranei
+	- ### FERITE
+		- **COSA FARE**
+			- lavarsi le mani, DPI
+			- lavare con soluzione fisiologica o acqua corrente
+			- valuta la ferita
+			- tamponare l'emorragia in sito, sollevare l'arto
+			- se presente corpo estraneo NON ESTRARRE
+			- applicare una medicazione
+		- **MATERIALI DI MEDICAZIONE**
+			- disinfettanti
+			- garze
+			- bende
+	- ### CORPO ESTRANEO CONFICCATO
+		- OGGETTO INAMOVIBILE
+			- frenare emorragia con compressione a distanza
+			- non rimuovere
+		- OGGETTO MOBILE
+			- rendere stabile oggetto, bloccando e isolandolo
+			- non estrarre
+		- COMPLICANZE DELLE FERITE
+			- lesioni valscolari
+			- lesioni nervose
+			- ipovolemia
+			- lesioni degli organi profondi
+	- ### AMPUTAZIONE
+		- di 2 tipi
+			- PARZIALE
+			- TOTALE
+		- in ogni caso
+			- COSA FARE:
+				- valutaz ABCDE
+				- arrestare emorragia
+				- scarico dell'arto colpito
+				- laccio emostatico solo se non hai altre alternative se gli altri metodi non funzionano
+			-
