@@ -127,4 +127,31 @@
 		- possibile turgore giugulare
 		- possibile deviazione della trachea
 		- shock
-	- ###
+	- ### LEMPO o VOLET COSTALE
+		- è un TRAUMA CHIUSO con fratture costali multiple adiacenti
+		- una parte del roace perde continuità con il resto della gabbia toracica
+		- ....
+		- **SEGNI E SINTOMI**
+			- dolore localizzato che aumenta durante i movimenti respiratori
+			- respiro irregolare e dispnea
+			- movimento paradosso del lembo costale ()direzione opposta)
+			- polso irregolare
+			- cianosi
+			- cute pallida
+	- ### PNEUMOTORACE
+		- indica presenza di aria nella cavità pleurica, viene persa la pressione negatica e il polmone collassa
+		- può essere
+			- SPONTANEO: causa da penetrazione di oggetto che perfora la pleura e il polmone non si espande correttamente
+				- respiro asimmetrico
+			- A
+		- SEGNI E SINTOMI
+			- dolore toacico
+			- riduzione dei rumori respiratori e moviemnti irregolari della parete toracica
+			- difficoltà respiratoria (dispnea)
+			- dilatazione delle vene del colo (turgore giugulare)+
+		- COSA FARE
+			- sicurezza, situazione (VALUTAZIONE)
+			- ABCDE
+			- ossigeno
+			- se aperto creare la VALVOLA FLUTTER UNIDIREZIONALE
+			- NON RIMUOVERE corpi estranei
