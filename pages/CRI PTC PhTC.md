@@ -137,7 +137,16 @@
 			- ricerca sanguinamenti
 			- valutare e trattare le lesioni minori
 			- prevenire ipotermia
-		- logseq.order-list-type:: number
+			- esame testa-piedi
+				- testa
+				- collo
+				- torace
+					- attenzione alla simmetria
+					- attenzione al movimento paradosso
+				- bacino
+					- prova di carico per max 1 tentativo
+				- schiena
+				- arti superiori
 	- valutaz secondaria
 	  logseq.order-list-type:: number
 	- trattamento
