@@ -57,6 +57,7 @@
 			- AVPU
 			  logseq.order-list-type:: number
 	- **SEGNI E SINTOMI DI ALLARME DI TRAUMA CRANICO**
+	  collapsed:: true
 		- ATTENZIONE: mantenere sempre sveglio il paziente, se si assopisce aggraverà le sue condizioni
 		- SINTOMI:
 			- sonnolenza o ifficoltà al risveglio
@@ -73,4 +74,16 @@
 			- tachicardia/bradicardia
 			- temperatura del corpo tachitermia/braditermia
 			- controllo della glicemia
-			- NOTA: fare sempre attenzione alla persona con intossicazione etilica che pu
+			- NOTA: fare sempre attenzione alla persona con intossicazione etilica che può trarre in inganno (lo distingue l'odore di alcol)
+	- **VALUTAZIONE DELLE LESIONI FACCIALI**
+		- deformità e asimmetrica del viso, occhi e bocca
+		- movimenti innaturali delle ossa facciali
+		- ematormi periorbitali (occhi neri, occhi di procione)
+		- gonfiore e allineamento scorretto dei denti inclusa la perdita
+		- ematomi estesi al volto
+			- dietro orecchio
+		- emorragie ad orecchio e naso (non si tampona, lasciar fluire)
+		- presenza di oggetti conficcati
+			- NON RIMUOVERE
+- ## LESIONI DELLA COLONNA VERTEBRALE
+	-
