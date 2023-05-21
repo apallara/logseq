@@ -1,0 +1,6 @@
+- **OBIETTIVI**:
+	- acquisire metodo di gestione dell'infortu traumatizz nella fase preospedaliera
+	- identificare a compromissione delle funzioni vitali
+	- trattamento tempestivo adeguato
+	- prevenzione delle complicanze
+-
