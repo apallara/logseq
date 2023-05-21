@@ -106,8 +106,10 @@
 			- rivalutazione in etinere, fino al PS
 			- eseguire eventuale pronosupinazione
 - ## TRAUMA TORACICO ADDOMINALE
+  collapsed:: true
 	- All'interno della cassa toracica ci sono organi vitali
 	- i traumi possono essere:
+	  collapsed:: true
 		- **chiuse**
 			- non visibili
 			- si percepiscono i sintomi
@@ -167,12 +169,14 @@
 			- trasporto in PS
 			- ossigeno
 	- ### TAMPONAMENTO CARDIACO
+	  collapsed:: true
 		- accumulo di sangue intorno al cuore
 			- SEGNI E SINTOMI:
 				- turgore giugulare
 				- ipovolemia
 				- ipotensione
 	- ### TRAUMA ADDOMINALE
+	  collapsed:: true
 		- interessano FEGATO e MILZA con conseguente forte sanguinamento
 		- reni
 		- stomaco e intestino
@@ -184,6 +188,7 @@
 				- emorragia
 				- shock ipovolemico
 			- ### TRAUMA ADDOMINALE E LESIOI CHIUSE
+			  collapsed:: true
 				- prodotte da traumi contusivi che possono causare ....
 				- **SEGNI E SINTOMI**
 					- posiione antalgica
@@ -204,5 +209,19 @@
 					- lascaire il mondo come sta
 					- coprire con teli sterili
 					- tenere umidi i teli con soluzione fisiologica
-					-
--
+- ## LESIONI ALL'APPARATO LOCOMOTORE
+	- lesioni possibili
+	  collapsed:: true
+		- scheletriche (fratture)
+		- articolari (disotrisioni, lussaioni)
+		- muscolari  (strappi, contratture)
+		- tutte accumonate da possibile trauma da schiacciamento
+	- ### VALUTAZIONE
+		- Sicurezza
+		- dinamica
+		- ABCD**E**
+			- rilevazione polso **a valle della lesione**
+			- rilevazione della sensibilità a alle della lesione
+			- rilevazione della temporature a del colorito della cute a valle della lesione
+		- anamnesi mirata (terapia assunta, patologie)
+		- non farti prendere per il culo: fai attenzione alle lesioni distraenti
