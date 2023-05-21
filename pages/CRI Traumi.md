@@ -226,7 +226,7 @@
 			- rilevazione della temporature a del colorito della cute a valle della lesione
 		- anamnesi mirata (terapia assunta, patologie)
 		- non farti prendere per il culo: fai attenzione alle lesioni distraenti
-	- ### **LESIONI SCHELETRICHE**
+	- ### LESIONI SCHELETRICHE
 	  collapsed:: true
 		- def. interruzione di continuità della struttura ossea
 		- **SEGNI E SINTOMI**
@@ -252,6 +252,7 @@
 				- infezioni nella frattura esposta
 				- pseudo articolazione+
 	- ### LESIONI ARTICOLARI
+	  collapsed:: true
 		- **distorsioni**
 		  collapsed:: true
 			- lesioni chiuse senza interessamento cutaneo
@@ -265,6 +266,7 @@
 				- ghiaccio sulla parte
 				- valutare dal medico
 		- **lussazioni**
+		  collapsed:: true
 			- perdita della congruità articolare tra due capi ossei
 			- generalmente lesioni chiuse
 			- generalmente dovute a movimenti estremi o pretrnaturali
@@ -279,8 +281,10 @@
 				- valutare dal medico in tempi apidi
 				- se la persona è abituata seguire le sue istruzioni
 		- **contusione muscolare**
+		  collapsed:: true
 			- trauma chiuso interessante i piani cutanei, sottocutaei e muscolari
 		- **strappo muscolare**
+		  collapsed:: true
 			- lesione di fibre muscolari
 				- 1 grado, 2 grado, 3 grado
 			- dolore ad insorgenza
@@ -289,8 +293,19 @@
 				- riposo con parte in scarico
 				- ghiaccio
 		- **crampo**
+		  collapsed:: true
 			- contrattura dolorosa e involontaria
 			- accumolo di acido lattico
 			- **COSA FARE**
 				- estendere il più possibile il muscolo in modo lento e graduale e mantenere per 15 secondi e poi rilasciare lentamente
-				- bagno caldo con sale marino grosso
+	- ### LESIONI MUSCOLARI
+	  collapsed:: true
+		- ematomi
+			- sangue che si raccoglie all'interno
+			- tumefazione
+			- applicare ghiaccio e pochi movimenti
+- ## MEZZI DI IMMOBILIZZAZIONE
+	- stecco bende rigide
+	- stecco bende a depressione
+	- immobilizzatori per arti superiori
+	-
