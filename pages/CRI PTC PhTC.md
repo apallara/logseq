@@ -7,6 +7,7 @@
 - ## METODO PTC
 	- anticipazione
 	  logseq.order-list-type:: number
+	  collapsed:: true
 		- verifica riserva ossigeno
 			- contenuto in L della bombola (ATM)
 			- autonomia in minuti della bombola
@@ -22,6 +23,11 @@
 		- ostacoli
 		- taglienti
 		- chimica
+		- la sicurezza ha diverse fasi
+			- INIZIA: dalla conoscenza dei fattori di rischio
+			- PROSEGUE: con l'utilizzo dei presidi di autoprotezione
+			- SI CONCLUDE: operando con metodo sulla scena
+		- nota: ciò che aumenta i rischi è principalmente la scarsa abitudine all'autoprotezione specifica
 	- valutaz primaria
 	  logseq.order-list-type:: number
 	- valutaz secondaria
