@@ -332,26 +332,59 @@
 			- disinfettanti
 			- garze
 			- bende
-	- ### CORPO ESTRANEO CONFICCATO
-		- OGGETTO INAMOVIBILE
-			- frenare emorragia con compressione a distanza
-			- non rimuovere
-		- OGGETTO MOBILE
-			- rendere stabile oggetto, bloccando e isolandolo
-			- non estrarre
-		- COMPLICANZE DELLE FERITE
-			- lesioni valscolari
-			- lesioni nervose
-			- ipovolemia
-			- lesioni degli organi profondi
-	- ### AMPUTAZIONE
-		- di 2 tipi
-			- PARZIALE
-			- TOTALE
-		- in ogni caso
-			- COSA FARE:
-				- valutaz ABCDE
-				- arrestare emorragia
-				- scarico dell'arto colpito
-				- laccio emostatico solo se non hai altre alternative se gli altri metodi non funzionano
-			-
+		- ### CORPO ESTRANEO CONFICCATO
+			- OGGETTO INAMOVIBILE
+				- frenare emorragia con compressione a distanza
+				- non rimuovere
+			- OGGETTO MOBILE
+				- rendere stabile oggetto, bloccando e isolandolo
+				- non estrarre
+			- COMPLICANZE DELLE FERITE
+				- lesioni valscolari
+				- lesioni nervose
+				- ipovolemia
+				- lesioni degli organi profondi
+		- ### AMPUTAZIONE
+			- di 2 tipi
+				- PARZIALE
+				- COMPLETO
+			- in ogni caso
+				- COSA FARE:
+					- valutaz ABCDE
+					- arrestare emorragia
+					- scarico dell'arto colpito
+					- laccio emostatico solo se non hai altre alternative se gli altri metodi non funzionano
+			- IN caso di AMPUTAZIONE COMPLETA
+				- COSA FARE:
+					- fai tutto quello per amputazione parziale
+					- conserva la parte amputata
+					- metti attorno garze
+					- metti in un sacchetto di plastica sterile
+					- metti in ghiacciaia
+	- **EFFETTI DELL'USTIONE**
+		- dipendono da:
+			- caratteristiche dell'oggetto ustionante
+			- meccanico
+			- corpo caldo
+			- profondità
+			- dimensione
+		- **PROFONDITA'**
+			- 3 gradi degli strati interessati
+		- **ESTENSIONE**
+			- % di parte corporea interessata
+		- **SEGNI E SINTOMI**
+			- senso di calore intenso
+			- dolore a seconda della profondità
+			- lesione cutanea, eritema, carbonizzazione ....
+		- **COSA FARE**
+			- allontanare fonte lesiva
+			- togliere monili
+			- togliere vestiti se NON adesi
+			- raffreddare con acqua
+			- proteggere
+		- **USTIONE CHIMICA**
+			- acidi
+			- basi
+			- agenti chimici
+			- **COSA FARE**
+				- capire la fonte lesiva, memorizzarla e comunicare in
