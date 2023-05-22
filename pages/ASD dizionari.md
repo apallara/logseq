@@ -123,15 +123,19 @@
 		  #+END_IMPORTANT
 		- **RAPPRESENTAZIONE**
 			- esistono diverse varianti che si possono far risalire ad una forma:
+			  collapsed:: true
 				- **dinamica/estensibile**:
 				  collapsed:: true
 					- modifica dinamicamente le dimensioni della tabella hash in base al numero di elementi che si inseriscono o eliminano
 				- **statica** (si usano strutture di tabelle di dimensione prefissata costituita da una struttura allocata sequenzialmente in memoria in forma di un array):
+				  collapsed:: true
 					- **hash chiuso**: consenti di inserire un insieme limitato di valori in uno spazio di dimensione fissa
+					  collapsed:: true
 						- struttura composta da una quantità massima (maxbucket) di contenitori di uguale dimensione (**bucket**)
 						- ogni **bucket** può mantenere all'interno al massimo un numero *nb* di coppie
 							- ES: *nb*=1; ogni bucket avrà una sola coppia (chiave,valore)
 					- **hash aperto**: consente di memorizzare un insieme di valori di dimensione qualsiasi in uno spazio potenzialmente illimitato
+					  collapsed:: true
 						- la struttura è composta da un certo numero di contenitori bucket, contenenti un numero indeterminato di elementi
 					- #+BEGIN_NOTE
 					  In entrambi i casi di hash chiuso e aperto si usa una funzione aritmetica per calcolare la posizione in tabella partendo dalla chiave
@@ -154,6 +158,7 @@
 					- la dimensione *m* del vettore va scelta in base al **numero di chiavi attese**
 				- la soluzione di compromesso è scegliere *m* maggiore di 1 ma **molto meno di |K|**
 				- ## ESEMPIO Hash Chiuso
+				  collapsed:: true
 					- ![image.png](../assets/image_1669892490058_0.png)
 					- Si prende un vettore, si crea un dizionario di 26 posti, ogni posizione è una lettera dell'alfabeto in ordine alfabetico
 					- la funzione di hash restituisce la posizione nel vettore a seconda della prima lettera del cognome
@@ -161,7 +166,7 @@
 						- si decide di spostarsi progressivamente verso una posizione libera
 							- al cambio della lettera si dovrebbe ottenere la posizione nell'alfabeto, ma si viene spostati più avanti nel vettore
 				- ## HASH APERTO
-					- consente di evitare la formazione di agglomerati e risolve il problema della cancellazioni
+					- consente di evitare la formazione di agglomerati e risolve il problema delle cancellazioni
 					- si mantiene la lista delgli elementi le cui chiavi producono lo stesso valore della funzione
 					- la **tabella hash** viene realizzata definendo un **array di liste di bucket** (liste di trabocco)
 						- la funzione hash viene utilizzata per determinare quale lista potrebbe contenere l'elemento che possiede una determinata chiave in modo da poter attivare una successiva operazione di ricerca nella lista corrispondente e da restituire la posizione del bucket che contiene la chiave
