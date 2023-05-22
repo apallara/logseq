@@ -6,6 +6,7 @@
   utile per applicazioni dove non servono gli operatori *unione, intersezione e differenza*
   #+END_TIP
 - **BASICS**
+  collapsed:: true
 	- DIZIONARI = sottotipo del tipo **insieme** #[[ASD insiemi]]
 	- si accede per RIFERIMENTO ad un campo CHIAVE = meccanismo di accesso
 		- costituita da uno o più attributi
@@ -19,6 +20,7 @@
 	  Se è necessario un insieme per applicare funzioni che NON sono insiemistiche allora si possono usare le operazioni dei dizionari
 	  #+END_NOTE
 - **OPERAZIONI**
+  collapsed:: true
 	- *appartiene* --> verificare l'esistenza di una chiave
 	- *inserisci* --> inserimento di nuove coppie (chiave, valore)
 	- *cancella* --> cancellazione di coppie
@@ -27,6 +29,7 @@
 		- *recupera* --> recupero informazioni nell'attributo
 		- *aggiorna* --> modifiche nell'attributo
 - **SPECIFICHE SINTATTICHE**
+  collapsed:: true
 	- Tipi
 		- dizionario, boolean, chiave, valore (anche altre strutture)
 	- Operatori
@@ -38,6 +41,7 @@
 		- cancella   (chiave, dizionario) -> dizionario
 		- recupera   (chiave, dizionario) -> valore
 - **SPECIFICHE SEMANTICHE**
+  collapsed:: true
 	- #+BEGIN_NOTE
 	  le {} indicano insiemi
 	  #+END_NOTE
@@ -79,14 +83,17 @@
 	  poco efficienti
 	  #+END_NOTE
 	- ### **VETTORE ORDINATO**
+	  collapsed:: true
 		- #+BEGIN_TIP
 		  conviene quando ci sono molte letture e poche scritture
 		  #+END_TIP
 		- **RAPPRESENTAZIONE**
+		  collapsed:: true
 			- si usa un vettore con un **cursore** (solo una semplice variabile) all'ultima posizione occupata
 			- si stabilisce una **relazione di ordinamento totale** <= sulle **chiavi**
 			- le chiavi sono memorizzate su un vettore in posizioni contigue e in ordine crescente partendo dalla prima posizione
 		- **VERIFICA DELL'APPARTENENZA**
+		  collapsed:: true
 			- **ricerca binaria (dicotomica)**
 				- Definizione dei tipi:
 					- Dizionario: tipo strutturato con:
@@ -98,13 +105,14 @@
 				  complessità del caso pessimo: logaritmica --> log_{2}(n)
 				  #+END_NOTE
 		- **COMPLESSITA' COMPUTAZIONALE DELLE OPERAZIONI**
+		  collapsed:: true
 			- **inserisci**: *log_{2}(n) + O(n) = O(n)* comporta uno spostamento in avanti di ogni elemento
 				- nota: la complessità logaritmica è data dalla ricerca (binaria), questo perchè prima di inserire si deve cercare il posto dove mettere il valore
 			- **appartiene**: *log_{2}(n)* se ricerca binaria
 			- **recupera**: chiama appartiene e quindi prende la sua complessità
 	- ### **TABELLA HASH**
 		- si appoggia su una struttura dati tabellare
-		- idea base: ricavare la **posizione** che la chiave occupa in un vettore **della chiave stessa**
+		- idea base: ricavare la **posizione** che la chiave occupa in un vettore **dalla chiave stessa**
 		- #+BEGIN_PINNED
 		  le operazioni di **ricerca** e di **modifica** hanno **tempo costante** e sono indipendenti sia dalla dimensione del dizionario che dall'insieme dei valori che verranno gestiti
 		  #+END_PINNED
@@ -116,6 +124,7 @@
 		- **RAPPRESENTAZIONE**
 			- esistono diverse varianti che si possono far risalire ad una forma:
 				- **dinamica/estensibile**:
+				  collapsed:: true
 					- modifica dinamicamente le dimensioni della tabella hash in base al numero di elementi che si inseriscono o eliminano
 				- **statica** (si usano strutture di tabelle di dimensione prefissata costituita da una struttura allocata sequenzialmente in memoria in forma di un array):
 					- **hash chiuso**: consenti di inserire un insieme limitato di valori in uno spazio di dimensione fissa
