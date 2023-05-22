@@ -187,6 +187,7 @@
 	  #+END_NOTE
 	- Metodi di risoluzione delle collisioni
 		- **SCANSIONE LINEARE**
+		  collapsed:: true
 			- se *h(k)* per qualunque *k* indica una posizione occupata, si ispeziona la posizione successiva nel vettore; se anche questa è occupata si prosegue fino a che la tabella non è satura
 			- #+BEGIN_TIP
 			  Per rendere questo processo più efficiente è necessario capire se una data locazione è sempre stata libera o se è stato cancellato un elemento da essa. Per farlo si usano chiavi fittizie *libero* e *cancellato*
@@ -195,23 +196,27 @@
 			  questa strategia può produrre nel tempo la produzione di **agglomerati** infatti se si producono molte **cancellazioni** per trovare la posizione del prossimo valore da rimuovere si potrebbe finire con lo scandire tutte le posizioni del vettore
 			  #+END_WARNING
 	- qualsiasi sia la funzione hash adottata deve fronteggiare gli **agglomerati** e le **collisioni**:
+	  collapsed:: true
 		- occorre una **funzione hash**: calcolabile velocemente e che **distribuisca le chiavi uniformemente** in *v*, in modo da ridurre le collisioni
 		- occorre un **metodo di scansione**: per risolvere le collisioni, utili a reperire le chiavi che hanno trovato la posizione occupata e che non provochi la formazione di agglomerati di chiavi oltre che a ridurli
 		- avere agglomerati comporta che si produrranno agglomerati sempre più grandi e quando si dovranno effettuare operazioni si sarà rallentati
 		- la dimensione *m* del vettore *v* deve essere una sovrastima del numero delle chiavi attese, per evitare di riempire *v* completamente (serve a risolvere le collisioni)
 	- **DEFINIRE FUNZIONI HASH (ricorda che la funzione definisce una POSIZIONE)**
-		- è conveniente considerare la rappresentazione binaria *bin(k)* della chiave *k*, poi si  verifica a che numero intero corrisponde
+		- è conveniente considerare la rappresentazione binaria *bin(k)* della chiave *k*, poi si verifica a che numero intero corrisponde
+		  collapsed:: true
 			- **PROBLEMA**: l'intero potrebbe essere troppo grande e non compatibile con la dimensione del vettore
 				- **SOLUZIONE**: si prende una sottostringa e si converte solo quella in intero, così da ottenere un numero valido all'interno del vettore
 		- **MIGLIORE SOLUZIONE:** prendere un oggetto --> si fa la rappresentazione binaria --> si converte in intero --> si esegue il modulo tra l'intero e la dimensione del vettore --> si ottiene una posizione nell'intervallo *[0, m-1]*
+		  collapsed:: true
 			- tende a distribuire **probabilisticamente** in maniera più uniforme
 			- può rappresentare qualsiasi cosa usando interi
 - **METODI DI SCANSIONE**
 	- si usano quando si incontra una locazione occupata e bisogna trovarne un'altra libera
 	- funzione *f_{1}* usata per l'*i-esima* volta che si trova una posizione del vettore *v* occupata;
 		- > *i>=0, (per i=0, f_{0}=h)*
-	- la funzione dovrebbe toccare e posizioni di *v* solo una volta
+	- la funzione dovrebbe toccare le posizioni di *v* solo una volta
 	- **SCANSIONE LINEARE**
+	  collapsed:: true
 		- > *f_{i} = (h(k) + h * i)  mod m*
 		- *h* è un intero positivo primo con *m*
 		- *h* è la distanza tra due posizioni successive esaminate nella scansione, se *h=1* la scansione ha passo unitario
