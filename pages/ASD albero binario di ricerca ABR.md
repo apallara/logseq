@@ -51,7 +51,6 @@
 			- cancellazione: O(n)
 			- inserimento: O(1)
 - ## Operazioni
-  collapsed:: true
 	- #+BEGIN_NOTE
 	  si lavora sempre su alberi
 	  #+END_NOTE
@@ -68,16 +67,20 @@
 	- tree min()
 	- tree max()
 - ## Operazioni e costi
+  collapsed:: true
 	- **Cancellazione**: ricerca O(log_{2}n) + costante
+	  collapsed:: true
 		- ![image.png](../assets/image_1673628963219_0.png){:height 222, :width 458}
 		- ![image.png](../assets/image_1673629001793_0.png){:height 220, :width 460}
 		- ![image.png](../assets/image_1673629053630_0.png){:height 257, :width 461}
+		  collapsed:: true
 			- ![image.png](../assets/image_1673629093636_0.png){:height 250, :width 489}
 			- **COSTO**: pari alla ricerca O(log_{2}n), aggiornamento (O(1)), rimozione e deallocazione.
-			  in totale O(log_{2}n) + costante
+			  in totale O(log_{2}n) + O(1)
 			- ![image.png](../assets/image_1673629135390_0.png){:height 237, :width 490}
 		- **Riassumendo**
 		  background-color:: yellow
+		  collapsed:: true
 			- CASO 1: nessun figlio
 			  collapsed:: true
 				- l'eliminazione della foglia non cambia la proprietà di ordine dei nodi rimanenti
@@ -86,6 +89,7 @@
 				- se *u* è il figlio destro (o sinistro) di *p* tutti i valori nel sottoalbero di *f* sono maggiori (o minori) di *p*
 				- quindi il nodo rimanente *f* può essere attaccato come figlio destro (o sinistro) di *p* esattamente al posto di *u*
 			- CASO 3: due figli
+			  collapsed:: true
 				- il successore ((6422e26a-3d81-4b04-94a1-399b0735f84b)) *s*
 					- è sicuramente maggiore di tutti i nodi del sottoalbero sinistro di *u*
 					- è sicuramente minore di tutti i nodi del sottoalbero destro di *u*
@@ -93,6 +97,7 @@
 			- la complessità computazionale è confinata all'altezza dell'albero
 	- **Inserimento**:
 	- **Complessità media**:
+	  collapsed:: true
 		- dipende dall'altezza media di un albero di ricerca
 		  background-color:: yellow
 		- caso generale (inserimenti + cancellazione)
@@ -105,13 +110,14 @@
 			- esempio albero perfetto: β(v)=0  per ogni nodo *v*
 			- comunque sono necessarie tecniche per il mantenimento bilanciato dell'albero, in particolarmente le cancellazioni mettono in crisi il bilanciamento
 - ## Ricerca del minimo e massimo
+  collapsed:: true
 	- ![image.png](../assets/image_1673886700775_0.png)
 	- **MINIMO**: si deve effettuare sempre la lettura del ramo SX (log_{2} n)
 	- **MASSIMO**: si deve effettuare sempre la lettura dal ramo DX (log_{2} n)
 	- nota: si è preso il caso migliore possibile dove l'albero è perfettamente bilanciato
 	- in buona sostanza in entrambi i casi si deve scendere fin tanto possibile ossia fino alle foglie
 - ## Ricerca del successore/predecessore
-	- **Definizione**: il successore di un nodo *u* è il più piccolo nodo maggiore di *u*
+	- **Definizione di successore**: il successore di un nodo *u* è il più piccolo nodo maggiore di *u*
 	  id:: 6422e26a-3d81-4b04-94a1-399b0735f84b
 	- **Casi**:
 		- *u* ha un figlio destro
