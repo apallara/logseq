@@ -10,8 +10,8 @@
 	- [[ASD albero binario]] --> [[ASD Riassunto alberi binari]]
 	- [[ASD dizionari]] -> [[ASD Riassunto dizionari]]
 	- [[ASD albero binario di ricerca ABR]] --> [[ASD Riassunto alberi binari di ricerca ABR]]
-	- [[ASD tipo astratto coda con priorità]]
-		-
+	  background-color:: yellow
+	- [[ASD tipo astratto coda con priorità]] -> [[ASD Riassunto coda con priorità]]
 - ## Tecniche algoritmiche
 	- [[ASD T.A. paradigmi]]
 	- [[ASD T.A. tecnica greedy]]

@@ -1,17 +1,14 @@
 - ## Definizione
-  collapsed:: true
 	- Caso particolare di #[[ASD insiemi]] (per mancanza di duplicati)
 	- Definita una relazione "<=" d'ordinamento totale
 	- è possibile inserire un nuovo elemento o estrarre l'elemento minimo
 	- in generale la priorità è una caratteristica aggiuntiva associata agli elementi
 - ## Operazioni
-  collapsed:: true
 	- crea
 	- insierisci
 	- **min**
 	- **cancellamin**
 - ## Specifica sintattica
-  collapsed:: true
 	- **Tipi**: prioricoda, tipoelem
 	- **Operatori**:
 		- creaprioricoda:    () --> prioricoda
@@ -19,7 +16,6 @@
 		- min:                      (prioricoda) --> tipoelem             [trova l'elemento con priorità minore]
 		- cancellamin:        (prioricoda) --> prioricoda           [cancella l'elemento con priorità minore]
 - ## Specifica semantica
-  collapsed:: true
 	- **Tipi**:
 		- prioricoda: insieme di code con priorità con elementi di tipo tipoelem
 	- **Operatori**:
@@ -35,7 +31,6 @@
 			- PRE: A ≠ ∅
 			- POST: A' = A -{x} con x=min(A)
 - ## Rappresentazione con strutture sequenziali
-  collapsed:: true
 	- è possibile rappresentarla con #[[ASD liste]] ordinate e non ordinate
 	- la coda con priorità è costituita da un insieme di atomi linearmente ordinati, ma **senza relazione strutturale** sull'insieme delle posizioni
 	- la rappresentazione è spesso associata al modello dell'albero binario
@@ -52,7 +47,6 @@
 		  id:: 63c58e1d-419f-4f99-acc8-06025c5a97f5
 		- ![image.png](../assets/image_1673893043005_0.png)
 - ## Rappresentazione heap (vettore) con albero binario
-  collapsed:: true
 	- gli elementi dell'albero B possono essere disposti in un vettore H (heap) nell'ordine in cui si incontrano visitando l'albero per livelli crescenti ed esaminando da SX a DX i nodi allo stesso livello. In tal caso si ha che:
 		- **H[1]** è l'elemento nella radice di B
 		- **H[2i]** e **H[2i+1]** sono gli elementi corrispondenti al figlio SX e al figlio DX di **H[i]**
@@ -63,9 +57,7 @@
 	- gli elementi dell'albero B si memorizzano nell'heap H come segue:
 		- H[1]=3, H[2]=5, H[3]=9, H[4]=6, H[5]=8, H[6]=13, H[7]=12, H[8]=11, H[9]=18, H[10]=10
 - ## Esempi di operazioni
-  collapsed:: true
 	- **Inserimento**:
-	  collapsed:: true
 		- ![image.png](../assets/image_1673967698697_0.png)
 		- si suppone di voler inserire l'elemento 4 nell'albero B, per farlo bisogna:
 			- 1. aggiungere una foglia con il 4, in questo caso 4 è figlio di 8
@@ -73,7 +65,6 @@
 		- **Costi**: il caso ottimo si ha quando il nodo da inserire da mettere ha valore massimo (priorità più bassa)
 			- negli altri casi O(log_{2}n), ovvero O(h), perchè la complessità dipenderà sempre dall'altezza dell'albero visto che è sempre bilanciato
 	- **cancellamin**:
-	  collapsed:: true
 		- ![image.png](../assets/image_1673968067790_0.png)
 		- si suppone di voler cancellare il nodo con priorità maggiore, in questo caso il 3, per farlo bisogna:
 			- 1. prendere l'ultima foglia (nodo dell'ultimo livello più a DX), in questo caso 10
@@ -81,7 +72,6 @@
 			  3. far "scendere" il 10 per rispettare la ((63c58e1d-419f-4f99-acc8-06025c5a97f5))
 		- **costi**: O(log_{2}n), ovvero O(h), ovvero la complessità dipenderà sempre dall’altezza dell’albero visto che è sempre bilanciato.
 	- **modifica**:
-	  collapsed:: true
 		- **caso di ultimo livello completo**:
 			- ![image.png](../assets/image_1673969812848_0.png)
 			- questo è il caso nel quale non è più possibile inserire foglie visto che l'ultimo livello è al completo, per poterlo fare si deve creare un nuovo livello:
@@ -94,7 +84,6 @@
 			- è necessario salire di un livello ed inserire nel fratello successivo un figlio a SX
 				- NOTA: non è necessario verificare se ha figli perchè si devono sempre rispettare le PRIPOPRIETA' 1 e 2
 	- **Osservazioni**:
-	  collapsed:: true
 		- **inserisci** e **cancellamin** prevedono 2 fasi
 			- modifica della struttura dell'albero ((63c58e06-e4eb-4efb-9906-45ab91da3464))
 				- #+BEGIN_TIP
