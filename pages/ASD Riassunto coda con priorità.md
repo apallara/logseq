@@ -5,4 +5,5 @@
 - Nel caso in cui il nodo fratello rispetto al padre del livello precedente a quello delle foglie abbia entrambi i nodi SX e DX presenti, si dovrà andare al fratello successivo di questo padre e aggiungere come SX il nodo che si vuole aggiungere.
 - Nel caso in cui il livello delle foglie sia al completo, quindi ogni nodo padre delle foglie abbia figli a SX e DX si dovrà cercare il primo nodo foglia e aggiungere come figlio SX il nodo di interesse.
 - In ogni caso di inserimento, se necessario, si dovranno eseguire tanti scambi quanti sono necessari per rispettare le proprietà 1 e 2.
-- Oltre all'operazione di inserimento vi è l'operazione di cancellazione dell'elemento con priorità massima (la radice), per farlo sar
+- Oltre all'operazione di inserimento vi è l'operazione di cancellazione dell'elemento con priorità massima (la radice), per farlo sarà necessario copiare l'ultima foglia al posto del nodo con priorità massima e si dovrà, se necessario, eseguire l'aggiustamento.
+- Nei casi di inserimento e cancellazione se sarà necessario eseguire gli spostamenti si avrà complessità O(log2n) + O(1) per l'inserimento o copia dei valori di interesse

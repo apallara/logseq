@@ -1,4 +1,5 @@
 - ## Strutture dati
+  collapsed:: true
 	- [[ASD liste]] --> [[ASD Riassunto liste]]
 	- [[ASD code]] --> [[ASD Riassunto code]]
 	- [[ASD pile]] --> [[ASD Riassunto pile]]
@@ -13,7 +14,7 @@
 	  background-color:: yellow
 	- [[ASD tipo astratto coda con priorità]] -> [[ASD Riassunto coda con priorità]]
 - ## Tecniche algoritmiche
-	- [[ASD T.A. paradigmi]]
+	- [[ASD T.A. paradigmi]] -> [[ASD TA riassunto paradigmi]]
 	- [[ASD T.A. tecnica greedy]]
 	- [[ASD T.A. paradigma selettivo]]
 	- [[ASD T.A. tecnica backtraking]]

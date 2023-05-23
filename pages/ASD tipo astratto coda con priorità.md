@@ -80,7 +80,6 @@
 			  3. far "scendere" il 10 per rispettare la ((63c58e1d-419f-4f99-acc8-06025c5a97f5))
 		- **costi**: O(log_{2}n), ovvero O(h), ovvero la complessità dipenderà sempre dall’altezza dell’albero visto che è sempre bilanciato.
 	- **modifica**:
-	  collapsed:: true
 		- **caso di ultimo livello completo**:
 		  collapsed:: true
 			- ![image.png](../assets/image_1673969812848_0.png)
