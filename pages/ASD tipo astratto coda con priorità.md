@@ -1,14 +1,17 @@
 - ## Definizione
+  collapsed:: true
 	- Caso particolare di #[[ASD insiemi]] (per mancanza di duplicati)
 	- Definita una relazione "<=" d'ordinamento totale
 	- è possibile inserire un nuovo elemento o estrarre l'elemento minimo
 	- in generale la priorità è una caratteristica aggiuntiva associata agli elementi
 - ## Operazioni
+  collapsed:: true
 	- crea
 	- insierisci
 	- **min**
 	- **cancellamin**
 - ## Specifica sintattica
+  collapsed:: true
 	- **Tipi**: prioricoda, tipoelem
 	- **Operatori**:
 		- creaprioricoda:    () --> prioricoda
@@ -16,6 +19,7 @@
 		- min:                      (prioricoda) --> tipoelem             [trova l'elemento con priorità minore]
 		- cancellamin:        (prioricoda) --> prioricoda           [cancella l'elemento con priorità minore]
 - ## Specifica semantica
+  collapsed:: true
 	- **Tipi**:
 		- prioricoda: insieme di code con priorità con elementi di tipo tipoelem
 	- **Operatori**:
@@ -31,6 +35,7 @@
 			- PRE: A ≠ ∅
 			- POST: A' = A -{x} con x=min(A)
 - ## Rappresentazione con strutture sequenziali
+  collapsed:: true
 	- è possibile rappresentarla con #[[ASD liste]] ordinate e non ordinate
 	- la coda con priorità è costituita da un insieme di atomi linearmente ordinati, ma **senza relazione strutturale** sull'insieme delle posizioni
 	- la rappresentazione è spesso associata al modello dell'albero binario
