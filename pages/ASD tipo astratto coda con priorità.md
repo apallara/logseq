@@ -67,9 +67,11 @@
 	- **Inserimento**:
 		- ![image.png](../assets/image_1673967698697_0.png)
 		- si suppone di voler inserire l'elemento 4 nell'albero B, per farlo bisogna:
+		  collapsed:: true
 			- 1. aggiungere una foglia con il 4, in questo caso 4 è figlio di 8
 			  2. far risalire l'elemento 4 fino a che non si rispetta la ((63c58e1d-419f-4f99-acc8-06025c5a97f5))
 		- **Costi**: il caso ottimo si ha quando il nodo da inserire da mettere ha valore massimo (priorità più bassa)
+		  collapsed:: true
 			- negli altri casi O(log_{2}n), ovvero O(h), perchè la complessità dipenderà sempre dall'altezza dell'albero visto che è sempre bilanciato
 	- **cancellamin**:
 		- ![image.png](../assets/image_1673968067790_0.png)
