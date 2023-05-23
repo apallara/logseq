@@ -1,0 +1,1 @@
+- La coda con priorità è una struttura utile nel caso si vogliano memorizzare elementi di tipo tipoelem che abbiano diverse priorità tra loro. Nello specifico l'idea di base è di accedere direttamente all'elemento con priorità massima. Per farlo è possibile sfruttare una rappresentazione per mezzo di alberi  binari, al suo interno i
