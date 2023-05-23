@@ -5,13 +5,11 @@
 	- è possibile inserire un nuovo elemento o estrarre l'elemento minimo
 	- in generale la priorità è una caratteristica aggiuntiva associata agli elementi
 - ## Operazioni
-  collapsed:: true
 	- crea
 	- insierisci
 	- **min**
 	- **cancellamin**
 - ## Specifica sintattica
-  collapsed:: true
 	- **Tipi**: prioricoda, tipoelem
 	- **Operatori**:
 		- creaprioricoda:    () --> prioricoda
@@ -40,7 +38,6 @@
 	- la coda con priorità è costituita da un insieme di atomi linearmente ordinati, ma **senza relazione strutturale** sull'insieme delle posizioni
 	- la rappresentazione è spesso associata al modello dell'albero binario
 - ## Rappresentazione con #[[ASD albero binario]]
-  collapsed:: true
 	- #+BEGIN_WARNING
 	  Le proprietà degli alberi binari, gli ABR e gli alberi delle code hanno priorità differenti
 	  #+END_WARNING
