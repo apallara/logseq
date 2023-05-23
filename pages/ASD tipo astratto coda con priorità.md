@@ -83,6 +83,7 @@
 			  3. far "scendere" il 10 per rispettare la ((63c58e1d-419f-4f99-acc8-06025c5a97f5))
 		- **costi**: O(log_{2}n), ovvero O(h), ovvero la complessità dipenderà sempre dall’altezza dell’albero visto che è sempre bilanciato.
 	- **modifica**:
+	  collapsed:: true
 		- **caso di ultimo livello completo**:
 		  collapsed:: true
 			- ![image.png](../assets/image_1673969812848_0.png)
@@ -91,6 +92,7 @@
 					- NOTA: significa partire dall'ultimo nodo foglia dell'ultimo livello e risalire alla radice per poi scendere sempre a SX
 				- inserire come figlio SX il nuovo nodo
 		- **caso di ultimo livello non completo ma con un nodo al completo**
+		  collapsed:: true
 			- ![image.png](../assets/image_1673970161585_0.png)
 			- si nota che l'ultimo livello dell'albero non è completo, ma il nodo del penultimo livello presenta figli a SX e DX, quindi è possibile spostarsi sul nodo successivo del penultimo livello per riempirlo
 			- è necessario salire di un livello ed inserire nel fratello successivo un figlio a SX
