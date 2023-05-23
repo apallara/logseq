@@ -40,7 +40,6 @@
 	- la coda con priorità è costituita da un insieme di atomi linearmente ordinati, ma **senza relazione strutturale** sull'insieme delle posizioni
 	- la rappresentazione è spesso associata al modello dell'albero binario
 - ## Rappresentazione con #[[ASD albero binario]]
-  collapsed:: true
 	- #+BEGIN_WARNING
 	  Le proprietà degli alberi binari, gli ABR e gli alberi delle code hanno priorità differenti
 	  #+END_WARNING

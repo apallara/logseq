@@ -11,6 +11,7 @@
 	- [[ASD dizionari]] -> [[ASD Riassunto dizionari]]
 	- [[ASD albero binario di ricerca ABR]] --> [[ASD Riassunto alberi binari di ricerca ABR]]
 	- [[ASD tipo astratto coda con priorità]]
+		-
 - ## Tecniche algoritmiche
 	- [[ASD T.A. paradigmi]]
 	- [[ASD T.A. tecnica greedy]]

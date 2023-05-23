@@ -67,7 +67,6 @@
 	- tree min()
 	- tree max()
 - ## Operazioni e costi
-  collapsed:: true
 	- **Cancellazione**: ricerca O(log_{2}n) + costante
 		- ![image.png](../assets/image_1673628963219_0.png){:height 222, :width 458}
 		- ![image.png](../assets/image_1673629001793_0.png){:height 220, :width 460}
