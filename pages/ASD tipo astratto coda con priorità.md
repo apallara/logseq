@@ -1,15 +1,17 @@
-- # Definizione
+- ## Definizione
   collapsed:: true
 	- Caso particolare di #[[ASD insiemi]] (per mancanza di duplicati)
 	- Definita una relazione "<=" d'ordinamento totale
 	- è possibile inserire un nuovo elemento o estrarre l'elemento minimo
 	- in generale la priorità è una caratteristica aggiuntiva associata agli elementi
 - ## Operazioni
+  collapsed:: true
 	- crea
 	- insierisci
 	- **min**
 	- **cancellamin**
 - ## Specifica sintattica
+  collapsed:: true
 	- **Tipi**: prioricoda, tipoelem
 	- **Operatori**:
 		- creaprioricoda:    () --> prioricoda
@@ -38,6 +40,7 @@
 	- la coda con priorità è costituita da un insieme di atomi linearmente ordinati, ma **senza relazione strutturale** sull'insieme delle posizioni
 	- la rappresentazione è spesso associata al modello dell'albero binario
 - ## Rappresentazione con #[[ASD albero binario]]
+  collapsed:: true
 	- #+BEGIN_WARNING
 	  Le proprietà degli alberi binari, gli ABR e gli alberi delle code hanno priorità differenti
 	  #+END_WARNING
@@ -62,6 +65,7 @@
 		- H[1]=3, H[2]=5, H[3]=9, H[4]=6, H[5]=8, H[6]=13, H[7]=12, H[8]=11, H[9]=18, H[10]=10
 - ## Esempi di operazioni
 	- **Inserimento**:
+	  collapsed:: true
 		- ![image.png](../assets/image_1673967698697_0.png)
 		- si suppone di voler inserire l'elemento 4 nell'albero B, per farlo bisogna:
 		  collapsed:: true
