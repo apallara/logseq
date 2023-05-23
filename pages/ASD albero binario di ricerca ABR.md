@@ -1,24 +1,28 @@
 - ## Basics
+  collapsed:: true
 	- sono a tutti gli effetti #[[ASD albero binario]] ottimizzato ed orientato alla ricerca
 	- **IDEA DI BASE**:
 		- sfruttare la ricerca binaria (sulla chiave) in un albero
 		- ottenere complessità logartirmica
 - ## Definizione
+  collapsed:: true
 	- Ogni nodo *u* contiene la coppia chiave *u.key* associata ad un valore *u.value*
 	- Le **chiavi** appartengono ad un insieme **totalmente ordinato**
 - ## Proprietà
+  collapsed:: true
 	- Queste 2 consentono la realizzazione della ricerca dicotomica (binaria)
 		- 1. le chiavi dei nodi del **sottoalbero sinistro** di *u* sono **minori** di *u.key*
 		  2. le chiavi dei nodi del **sottoalbero destro** di *u* sono **maggiori** di *u.key*
 	- ![image.png](../assets/image_1673623411853_0.png)
-	- ordinamento delle chiavi applicando una visita simmetrica ((63c1507b-7119-41fa-afbd-a3284f3b2449))
-- ## Costi ricerca
+	- ordinamento delle chiavi applicando una visita ((63c1507b-7119-41fa-afbd-a3284f3b2449))
+- ## Considerazioni sui costi della ricerca
   id:: 63c181f6-7f45-4965-8fa0-e3573101a80b
-	- considerazioni sui costi
-		- la ricerca è avvantaggiata da un corretto bilanciamento dei valori (tutti i livelli pieni sia a SX che DX)
+  collapsed:: true
+	- la ricerca è avvantaggiata da un corretto bilanciamento dei valori (tutti i livelli pieni sia a SX che DX)
 		- più è ampio meglio è
 		- più è alto peggio è
 - ## Dizionari
+  collapsed:: true
 	- **Dizionario (tabelle hash)**
 		- insieme dinamico che implementa le seguenti funzionalità
 			- *item lookup (item k)*
@@ -29,6 +33,7 @@
 - ## Implementazioni
 	- ![image.png](../assets/image_1673626160111_0.png)
 	- In generale per tutte le implementazioni ogni nodo è composto da:
+	  collapsed:: true
 		- figlio sinistro, figlio destro
 		- padre
 		- chiave
