@@ -40,10 +40,11 @@
 	- la coda con priorità è costituita da un insieme di atomi linearmente ordinati, ma **senza relazione strutturale** sull'insieme delle posizioni
 	- la rappresentazione è spesso associata al modello dell'albero binario
 - ## Rappresentazione con #[[ASD albero binario]]
+  collapsed:: true
 	- #+BEGIN_WARNING
 	  Le proprietà degli alberi binari, gli ABR e gli alberi delle code hanno priorità differenti
 	  #+END_WARNING
-	- gli elementi di una coda con priorità C possono essere memorizzati in un albero binario B che abbia le seguenti prorpietà:
+	- gli elementi di una coda con priorità *C* possono essere memorizzati in un albero binario B che abbia le seguenti proprietà:
 		- l'albero B deve essere quasi perfettamente bilanciato
 		- se *k* è il livello massimo delle foglie, allora B ha esattamente 2^{k}-1 nodi di livello minore di *k*
 		- **PROPRIETA' 1**: tutte le sue foglie di livello *k* (l'ultimo livello contiene foglie) sono addossate a sinistra
@@ -52,6 +53,7 @@
 		  id:: 63c58e1d-419f-4f99-acc8-06025c5a97f5
 		- ![image.png](../assets/image_1673893043005_0.png)
 - ## Rappresentazione heap (vettore) con albero binario
+  collapsed:: true
 	- gli elementi dell'albero B possono essere disposti in un vettore H (heap) nell'ordine in cui si incontrano visitando l'albero per livelli crescenti ed esaminando da SX a DX i nodi allo stesso livello. In tal caso si ha che:
 		- **H[1]** è l'elemento nella radice di B
 		- **H[2i]** e **H[2i+1]** sono gli elementi corrispondenti al figlio SX e al figlio DX di **H[i]**
