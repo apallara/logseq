@@ -31,24 +31,27 @@
 		- PRO:
 			- complessità costante per verifica appartenenza, aggiunta, cancellazione, ottenimento valore da chiave
 - ## Implementazioni
+  collapsed:: true
 	- ![image.png](../assets/image_1673626160111_0.png)
 	- In generale per tutte le implementazioni ogni nodo è composto da:
-	  collapsed:: true
 		- figlio sinistro, figlio destro
 		- padre
 		- chiave
 		- valore
 	- **array ordinato**
+	  collapsed:: true
 		- COSTI
 			- Ricerca: costo O(log n)
 			- Inserimento: O(n)
 			- cancellazione: O(n)
 	- **lista non ordinata**
+	  collapsed:: true
 		- COSTI
 			- ricerca: O(n)
 			- cancellazione: O(n)
 			- inserimento: O(1)
 - ## Operazioni
+  collapsed:: true
 	- #+BEGIN_NOTE
 	  si lavora sempre su alberi
 	  #+END_NOTE
@@ -70,7 +73,7 @@
 		- ![image.png](../assets/image_1673629001793_0.png){:height 220, :width 460}
 		- ![image.png](../assets/image_1673629053630_0.png){:height 257, :width 461}
 			- ![image.png](../assets/image_1673629093636_0.png){:height 250, :width 489}
-			- COSTO: pari alla ricerca O(log_{2}n), aggiornamento (O(1)), rimozione e deallocazione.
+			- **COSTO**: pari alla ricerca O(log_{2}n), aggiornamento (O(1)), rimozione e deallocazione.
 			  in totale O(log_{2}n) + costante
 			- ![image.png](../assets/image_1673629135390_0.png){:height 237, :width 490}
 		- **Riassumendo**
