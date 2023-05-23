@@ -1,0 +1,2 @@
+- Gli alberi binari di ricerca derivano dalla struttura dell'albero binario, la particolarità degli ABR è quella di essere orientati ed ottimizzati per eseguire ricerche. Per fare ciò ogni nodo è composto da una chiave e valore, tutti i nodi hanno una relazione di ordinamento totale sulle chiavi.
+- Ogni nodo memorizzerà anche i riferimenti al padre ed al

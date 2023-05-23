@@ -51,6 +51,7 @@
 			- cancellazione: O(n)
 			- inserimento: O(1)
 - ## Operazioni
+  collapsed:: true
 	- #+BEGIN_NOTE
 	  si lavora sempre su alberi
 	  #+END_NOTE
@@ -69,7 +70,6 @@
 - ## Operazioni e costi
   collapsed:: true
 	- **Cancellazione**: ricerca O(log_{2}n) + costante
-	  collapsed:: true
 		- ![image.png](../assets/image_1673628963219_0.png){:height 222, :width 458}
 		- ![image.png](../assets/image_1673629001793_0.png){:height 220, :width 460}
 		- ![image.png](../assets/image_1673629053630_0.png){:height 257, :width 461}
@@ -80,7 +80,6 @@
 			- ![image.png](../assets/image_1673629135390_0.png){:height 237, :width 490}
 		- **Riassumendo**
 		  background-color:: yellow
-		  collapsed:: true
 			- CASO 1: nessun figlio
 			  collapsed:: true
 				- l'eliminazione della foglia non cambia la proprietà di ordine dei nodi rimanenti
@@ -89,7 +88,6 @@
 				- se *u* è il figlio destro (o sinistro) di *p* tutti i valori nel sottoalbero di *f* sono maggiori (o minori) di *p*
 				- quindi il nodo rimanente *f* può essere attaccato come figlio destro (o sinistro) di *p* esattamente al posto di *u*
 			- CASO 3: due figli
-			  collapsed:: true
 				- il successore ((6422e26a-3d81-4b04-94a1-399b0735f84b)) *s*
 					- è sicuramente maggiore di tutti i nodi del sottoalbero sinistro di *u*
 					- è sicuramente minore di tutti i nodi del sottoalbero destro di *u*
@@ -117,27 +115,30 @@
 	- nota: si è preso il caso migliore possibile dove l'albero è perfettamente bilanciato
 	- in buona sostanza in entrambi i casi si deve scendere fin tanto possibile ossia fino alle foglie
 - ## Ricerca del successore/predecessore
+  collapsed:: true
 	- **Definizione di successore**: il successore di un nodo *u* è il più piccolo nodo maggiore di *u*
 	  id:: 6422e26a-3d81-4b04-94a1-399b0735f84b
 	- **Casi**:
+	  collapsed:: true
 		- *u* ha un figlio destro
+		  collapsed:: true
 			- ![image.png](../assets/image_1673642013296_0.png)
 			- il successore *u* è il minimo del sottoalbero destro di *u*
 			- ESEMPIO: il successore di 2 è 3
 		- *u* non ha un figlio destro
+		  collapsed:: true
 			- il successore è il primo antenato *u* tale per cui *u* sta nel sottoalbero sinistro di *u'*
 			- ![image.png](../assets/image_1673642309178_0.png)
 			- ESEMPIO: successore di 4 è 6
 	- **NOTE**: cercare il successore significa cercare nei sottoalberi destri del nodo di partenza, potrebbe anche accadere che il successore non si trovi nei sottoalberi superiori al nodo di partenza
--
 - ## Perchè gli ABR e non tabelle hash
-	- tabelle hash complessità costante (caso ottimo): appartenenza, aggiunta, eliminazione, ottenimento valore associato ad una chiave
-	- abr complessità logaritmica (ottimo): ricerca inserimento cancellazione
-		- abr è meglio perché prevede ordinamento delle chiavi, unico vantaggio rispetto alle tabelle hash
+  collapsed:: true
+	- tabelle hash **complessità costante** (caso ottimo): appartenenza, aggiunta, eliminazione, ottenimento valore associato ad una chiave
+	- ABR **complessità logaritmica** (ottimo): ricerca inserimento cancellazione
+		- ABR è meglio perché prevede ordinamento delle chiavi, unico vantaggio rispetto alle tabelle hash
 			- #+BEGIN_TIP
 			  indicati per gestione DBMS, condizioni di ricerca di confronto in base all'ordinamento, di minore e maggiore
 			  #+END_TIP
 			- es: cercare tutte le matricole da 3000 in poi
 				- nell'ABR: basta andare all'indice 3000 e visitare il sottoalbero
-				- nella tab hash: si devono scandire necessariamente tutte le chiavi
-			-
+				- nella tabella hash: si devono scandire necessariamente tutte le chiavi
