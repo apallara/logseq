@@ -75,6 +75,7 @@
 		  collapsed:: true
 			- negli altri casi O(log_{2}n), ovvero O(h), perchè la complessità dipenderà sempre dall'altezza dell'albero visto che è sempre bilanciato
 	- **cancellamin**:
+	  collapsed:: true
 		- ![image.png](../assets/image_1673968067790_0.png)
 		- si suppone di voler cancellare il nodo con priorità maggiore, in questo caso il 3, per farlo bisogna:
 			- 1. prendere l'ultima foglia (nodo dell'ultimo livello più a DX), in questo caso 10
@@ -83,6 +84,7 @@
 		- **costi**: O(log_{2}n), ovvero O(h), ovvero la complessità dipenderà sempre dall’altezza dell’albero visto che è sempre bilanciato.
 	- **modifica**:
 		- **caso di ultimo livello completo**:
+		  collapsed:: true
 			- ![image.png](../assets/image_1673969812848_0.png)
 			- questo è il caso nel quale non è più possibile inserire foglie visto che l'ultimo livello è al completo, per poterlo fare si deve creare un nuovo livello:
 				- è quindi necessario individuare il primo nodo dell'ultimo livello
@@ -90,7 +92,7 @@
 				- inserire come figlio SX il nuovo nodo
 		- **caso di ultimo livello non completo ma con un nodo al completo**
 			- ![image.png](../assets/image_1673970161585_0.png)
-			- si nota che l'ultimo livello dell'albero non è completo, ma il nodo del penultimo livello presenta figli a SX e DX, quindi è possibile spostarsi sul nodo successivo per penultimo livello per riempirlo
+			- si nota che l'ultimo livello dell'albero non è completo, ma il nodo del penultimo livello presenta figli a SX e DX, quindi è possibile spostarsi sul nodo successivo del penultimo livello per riempirlo
 			- è necessario salire di un livello ed inserire nel fratello successivo un figlio a SX
 				- NOTA: non è necessario verificare se ha figli perchè si devono sempre rispettare le PRIPOPRIETA' 1 e 2
 	- **Osservazioni**:
