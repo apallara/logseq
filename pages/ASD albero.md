@@ -1,5 +1,4 @@
 - l'albero è un #[[ASD grafo]] definito dalla coppia T=<N,A>
-  collapsed:: true
 	- A: è l'insieme di coppie non ordinate (**albero libero**)
 		- l'albero libero è un grafo non orientato e non connesso
 	- il numero di archi è uguale al numero di nodi meno 1:|A|=|N|-1
@@ -14,7 +13,6 @@
 		- **fratelli**: nodi con lo stesso padre
 		- **foglie**: nodi terminali senza figli
 - ## Proprietà
-  collapsed:: true
 	- un albero è un **grafo aciclico** (non ci sono cicli), dove per ogni nodo esiste un solo arco entrante
 		- tranne per la radice che non ne ha nessuno
 	- un albero è un grafo **debolmente connesso**
@@ -23,7 +21,6 @@
 		- FORMALMENTE: tutti i nodi di un albero **T** (tranne *r*) possono essere ripartiti in insiemi disgiunti ciascuno dei quali individua un albero (dato un nodo *u*, i suoi discendenti costituiscono un albero detto sottoalbero di radice *u*)
 	- ![image.png](../assets/image_1673025142091_0.png)
 - ## Definizione (ricorsiva)
-  collapsed:: true
 	- un albero è un grafo orientato che, o è vuoto, oppure:
 		- esiste un nodo **r** detto radice senza predecessori con n>=0 nodi successori a_{1}, a_{2}, ..., a_{n}
 		- tutti gli altri sono ripartiti in *n* sottoalberi mutuamente disgiunti T_{1}, T_{2}, ..., T_{n} aventi rispettivamente a_{1}, a_{2}, ..., a_{n} come radice
@@ -123,7 +120,6 @@
 			             discendenti)
 			- ![image.png](../assets/image_1673289604203_0.png)
 - ## Algoritmi di visita
-  collapsed:: true
 	- consiste nel pianificare una "rotta" che deve consentire di esaminare **ogni nodo** dell'albero **esattamente una volta**
 	- Gli alberi si possono visitare in:
 		- **ampiezza (breadth-first search, a ventaglio)**: BFS
@@ -137,7 +133,6 @@
 					  significa richiamare ricorsivamente la previsita
 					  #+END_NOTE
 				- **postvisita (o postordine)**: consiste nel fare **prima la postvisita di T_{1}, T_{2}, ..., T_{k}** e **dopo nell'esaminare la radice r**
-					-
 				- **invisita (ord. simmetrico)**:
 				  id:: 63c14954-6c0b-458c-a80f-2503763a1d61
 					- consiste nel fare:
@@ -146,6 +141,7 @@
 					  3. invisita di T_{i+1}, ..., T_{k}, per un prefissato i>=1
 				- ![image.png](../assets/image_1673290323220_0.png)
 - ## Realizzazioni
+  collapsed:: true
 	- ## con vettore dei padri
 	  id:: 63c14954-6ecd-427d-8b54-f796fd9f36e9
 	  collapsed:: true

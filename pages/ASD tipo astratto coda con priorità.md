@@ -1,4 +1,4 @@
-- ## Definizione
+- # Definizione
   collapsed:: true
 	- Caso particolare di #[[ASD insiemi]] (per mancanza di duplicati)
 	- Definita una relazione "<=" d'ordinamento totale
