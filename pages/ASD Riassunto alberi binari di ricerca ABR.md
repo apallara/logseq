@@ -1,2 +1,5 @@
 - Gli alberi binari di ricerca derivano dalla struttura dell'albero binario, la particolarità degli ABR è quella di essere orientati ed ottimizzati per eseguire ricerche. Per fare ciò ogni nodo è composto da una chiave e valore, tutti i nodi hanno una relazione di ordinamento totale sulle chiavi.
-- Ogni nodo memorizzerà anche i riferimenti al padre ed al
+- Ogni nodo memorizzerà anche i riferimenti al padre ed al figlio sinistro e destro, se esistenti, altrimenti saranno riferimenti vuoti.
+- E' possibile rappresentare gli ABR mediante liste e vettori, in ogni caso è consigliabile stabilire una relazione di ordinamento totale sulle chiavi. In merito ai vettori rimangono comunque tutti gli aspetti negativi relativi alla rigidità ed eventuali operazioni di doubling o dimezzamento.
+- Per quanto attiene le operazioni di inserimento e cancellazione si deve tenere conto di 2 proprietà degli ABR. La prima è relativa ai nodi, tutti i figli destri devono essere maggiori del nodo padre, mentre la seconda è che i figli sinistri devono essere minori del padre.
+- Vi sono dei casi "banali" di cancellazione, ossia la rimozione di un nodo foglia (quindi senza alcun figlio)

@@ -9,7 +9,6 @@
 	- Ogni nodo *u* contiene la coppia chiave *u.key* associata ad un valore *u.value*
 	- Le **chiavi** appartengono ad un insieme **totalmente ordinato**
 - ## Proprietà
-  collapsed:: true
 	- Queste 2 consentono la realizzazione della ricerca dicotomica (binaria)
 		- 1. le chiavi dei nodi del **sottoalbero sinistro** di *u* sono **minori** di *u.key*
 		  2. le chiavi dei nodi del **sottoalbero destro** di *u* sono **maggiori** di *u.key*
